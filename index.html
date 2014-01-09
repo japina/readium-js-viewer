@@ -1,6 +1,28 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .library-item{
+            height: 100px;
+        }
+        .library-item img{
+            max-height: 100%;
+        }
+        .library-item .no-cover{
+            transform: scale(1,1);
+            -webkit-transform: scale(1,1);
+            -ms-transform: scale(1,1);
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/viewer.css">
+    <link rel="stylesheet" type="text/css" href="css/library.css"> 
+    <link rel="stylesheet" type="text/css" href="css/readium_js.css"> 
+
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">     
+
 </head>
 <body>
 	<p>
@@ -8,9 +30,24 @@
 </p>
 <p>
 	<a href="#" onclick="openDialog()">preview epub</a>
-	<div id="dialog"><iframe src="http://localhost:8089/book.html?epub=epub_content%2Fpage-blanche" width="100%" height="100%"></iframe></div>
 </p>
+<!--	<div id="dialog"><iframe src="http://localhost:8089/book.html?epub=epub_content%2Fpage-blanche" width="100%" height="100%"></iframe></div> -->
+<div id="epubdialog">
+	        <nav class="navbar" role="navigation"> 
+        </nav> 
+        <div id="app-container">
+        </div>  
+</div>
 </body>
+    <!-- We load this explicitly because it is needed by shared js which is not under Require.JS-->
+    <script src="./lib/thirdparty/URIjs/URI.js" type="text/javascript"></script>
+    <script data-main="../lib/ReadiumViewer.js" src="./lib/require.js" type="text/javascript"></script>
+    <script src="require_config.js" type="text/javascript"></script>
+    <script src="extend_require_config.js" type="text/javascript"></script>
+
     <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>   
-    <script src="index.js" type="text/javascript"></script>   </html>
+
+
+    <script src="index.js" type="text/javascript"></script>   
+</html>
