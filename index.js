@@ -13,12 +13,15 @@ function initDialog(){
 		height: 800,
 		autoOpen: false
 	});
-
 	console.log("init finished");
 }
 
 function openDialog(){
 	$("#epubdialog").dialog("open");
 }
-
-$(document).ready(initDialog());
+$(document).ready(function(){
+	$("a").click(function(){
+		openDialog();		
+	})
+	initDialog();
+});

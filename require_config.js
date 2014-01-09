@@ -30,8 +30,7 @@ require.config({
         templateExtension : ""
     },
     config : {
-        'storage/EpubUnzipper' : {'workerScriptsPath' : '/lib/thirdparty/'},
-        'workers/WorkerProxy' : {'workerUrl' : '/scripts/readium-worker.js'}
+        'storage/EpubUnzipper' : {'workerScriptsPath' : '/lib/thirdparty/'}
     },
     shim: {
         zip : {
