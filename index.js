@@ -19,9 +19,10 @@ function initDialog(){
 function openDialog(){
 	$("#epubdialog").dialog("open");
 }
-$(document).ready(function(){
+/*$(document).ready(function(){
 	$("a").click(function(){
-		openDialog();		
+		window.open("http://www.google.com");		
+		//openDialog();		
 	})
 	initDialog();
-});
+}); */
