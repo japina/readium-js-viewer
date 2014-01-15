@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="booktype:a201060" name="dtb:uid"/>
+    <meta content="0" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Book title</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="chapter_0">
+      <navLabel>
+        <text>AEQUILIBRIUM</text>
+      </navLabel>
+      <content src="Text/aequilibrium.xhtml#toc_marker-0"/>
+    </navPoint>
+    <navPoint id="chapter_1">
+      <navLabel>
+        <text>PROLOG</text>
+      </navLabel>
+      <content src="Text/prolog.xhtml#toc_marker-1"/>
+    </navPoint>
+    <navPoint id="chapter_2">
+      <navLabel>
+        <text>EINS</text>
+      </navLabel>
+      <content src="Text/eins.xhtml#toc_marker-2"/>
+    </navPoint>
+    <navPoint id="chapter_3">
+      <navLabel>
+        <text>ZWEI</text>
+      </navLabel>
+      <content src="Text/zwei.xhtml#toc_marker-3"/>
+    </navPoint>
+    <navPoint id="chapter_4">
+      <navLabel>
+        <text>DREI</text>
+      </navLabel>
+      <content src="Text/drei.xhtml#toc_marker-4"/>
+    </navPoint>
+    <navPoint id="chapter_5">
+      <navLabel>
+        <text>VIER</text>
+      </navLabel>
+      <content src="Text/vier.xhtml#toc_marker-5"/>
+    </navPoint>
+    <navPoint id="impressum">
+      <navLabel>
+        <text>Impressum</text>
+      </navLabel>
+      <content src="Text/impressum.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

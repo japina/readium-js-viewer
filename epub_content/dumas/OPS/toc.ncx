@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx
+  PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+   <head>
+      <!--The following four metadata items are required for all
+            NCX documents, including those conforming to the relaxed
+            constraints of OPS 2.0-->
+      <meta name="dtb:uid" content="4de08435-ff48-41c3-9a84-8b96d533529b"/>
+      <meta name="epub-creator" content="epubBooks (www.epubbooks.com)"/>
+      <meta name="dtb:depth" content="1"/>
+      <meta name="dtb:totalPageCount" content="0"/>
+      <meta name="dtb:maxPageNumber" content="0"/>
+   </head>
+   <docTitle>
+      <text>The Three Musketeers</text>
+   </docTitle>
+   <docAuthor>
+      <text>Alexandre Dumas, Pere</text>
+   </docAuthor>
+   <navMap>
+      <navPoint id="navpoint-1" playOrder="1">
+         <navLabel>
+            <text>Title Page</text>
+         </navLabel>
+         <content src="title.html"/>
+      </navPoint>
+      <navPoint id="navpoint-2" playOrder="2">
+         <navLabel>
+            <text>epubBooks Information</text>
+         </navLabel>
+         <content src="epubbooksinfo.html"/>
+      </navPoint>
+      <navPoint id="navpoint-3" playOrder="3">
+         <navLabel>
+            <text>AUTHOR'S PREFACE</text>
+         </navLabel>
+         <content src="preface-001.html"/>
+      </navPoint>
+      <navPoint id="navpoint-4" playOrder="4">
+         <navLabel>
+            <text>1 THE THREE PRESENTS OF D'ARTAGNAN THE ELDER</text>
+         </navLabel>
+         <content src="chapter-001.html"/>
+      </navPoint>
+      <navPoint id="navpoint-5" playOrder="5">
+         <navLabel>
+            <text>2 THE ANTECHAMBER OF M. DE TREVILLE</text>
+         </navLabel>
+         <content src="chapter-002.html"/>
+      </navPoint>
+      <navPoint id="navpoint-6" playOrder="6">
+         <navLabel>
+            <text>3 THE AUDIENCE</text>
+         </navLabel>
+         <content src="chapter-003.html"/>
+      </navPoint>
+      <navPoint id="navpoint-7" playOrder="7">
+         <navLabel>
+            <text>4 THE SHOULDER OF ATHOS, THE BALDRIC OF PORTHOS AND THE HANDKERCHIEF OF
+ARAMIS</text>
+         </navLabel>
+         <content src="chapter-004.html"/>
+      </navPoint>
+      <navPoint id="navpoint-8" playOrder="8">
+         <navLabel>
+            <text>5 THE KING'S MUSKETEERS AND THE CARDINAL'S GUARDS</text>
+         </navLabel>
+         <content src="chapter-005.html"/>
+      </navPoint>
+      <navPoint id="navpoint-9" playOrder="9">
+         <navLabel>
+            <text>6 HIS MAJESTY KING LOUIS XIII</text>
+         </navLabel>
+         <content src="chapter-006.html"/>
+      </navPoint>
+      <navPoint id="navpoint-10" playOrder="10">
+         <navLabel>
+            <text>7 THE INTERIOR OF "THE MUSKETEERS"</text>
+         </navLabel>
+         <content src="chapter-007.html"/>
+      </navPoint>
+      <navPoint id="navpoint-11" playOrder="11">
+         <navLabel>
+            <text>8 CONCERNING A COURT INTRIGUE</text>
+         </navLabel>
+         <content src="chapter-008.html"/>
+      </navPoint>
+      <navPoint id="navpoint-12" playOrder="12">
+         <navLabel>
+            <text>9 D'ARTAGNAN SHOWS HIMSELF</text>
+         </navLabel>
+         <content src="chapter-009.html"/>
+      </navPoint>
+      <navPoint id="navpoint-13" playOrder="13">
+         <navLabel>
+            <text>10 A MOUSETRAP IN THE SEVENTEENTH CENTURY</text>
+         </navLabel>
+         <content src="chapter-010.html"/>
+      </navPoint>
+      <navPoint id="navpoint-14" playOrder="14">
+         <navLabel>
+            <text>11 IN WHICH THE PLOT THICKENS</text>
+         </navLabel>
+         <content src="chapter-011.html"/>
+      </navPoint>
+      <navPoint id="navpoint-15" playOrder="15">
+         <navLabel>
+            <text>12 GEORGE VILLIERS, DUKE OF BUCKINGHAM</text>
+         </navLabel>
+         <content src="chapter-012.html"/>
+      </navPoint>
+      <navPoint id="navpoint-16" playOrder="16">
+         <navLabel>
+            <text>13 MONSIEUR BONACIEUX</text>
+         </navLabel>
+         <content src="chapter-013.html"/>
+      </navPoint>
+      <navPoint id="navpoint-17" playOrder="17">
+         <navLabel>
+            <text>14 THE MAN OF MEUNG</text>
+         </navLabel>
+         <content src="chapter-014.html"/>
+      </navPoint>
+      <navPoint id="navpoint-18" playOrder="18">
+         <navLabel>
+            <text>15 MEN OF THE ROBE AND MEN OF THE SWORD</text>
+         </navLabel>
+         <content src="chapter-015.html"/>
+      </navPoint>
+      <navPoint id="navpoint-19" playOrder="19">
+         <navLabel>
+            <text>16 IN WHICH M. SEGUIER, KEEPER OF THE SEALS, LOOKS MORE THAN ONCE FOR
+THE BELL, IN ORDER TO RING IT, AS HE DID BEFORE</text>
+         </navLabel>
+         <content src="chapter-016.html"/>
+      </navPoint>
+      <navPoint id="navpoint-20" playOrder="20">
+         <navLabel>
+            <text>17 BONACIEUX AT HOME</text>
+         </navLabel>
+         <content src="chapter-017.html"/>
+      </navPoint>
+      <navPoint id="navpoint-21" playOrder="21">
+         <navLabel>
+            <text>18 LOVER AND HUSBAND</text>
+         </navLabel>
+         <content src="chapter-018.html"/>
+      </navPoint>
+      <navPoint id="navpoint-22" playOrder="22">
+         <navLabel>
+            <text>19 PLAN OF CAMPAIGN</text>
+         </navLabel>
+         <content src="chapter-019.html"/>
+      </navPoint>
+      <navPoint id="navpoint-23" playOrder="23">
+         <navLabel>
+            <text>20 THE JOURNEY</text>
+         </navLabel>
+         <content src="chapter-020.html"/>
+      </navPoint>
+      <navPoint id="navpoint-24" playOrder="24">
+         <navLabel>
+            <text>21 THE COUNTESS DE WINTER</text>
+         </navLabel>
+         <content src="chapter-021.html"/>
+      </navPoint>
+      <navPoint id="navpoint-25" playOrder="25">
+         <navLabel>
+            <text>22 THE BALLET OF LA MERLAISON</text>
+         </navLabel>
+         <content src="chapter-022.html"/>
+      </navPoint>
+      <navPoint id="navpoint-26" playOrder="26">
+         <navLabel>
+            <text>23 THE RENDEZVOUS</text>
+         </navLabel>
+         <content src="chapter-023.html"/>
+      </navPoint>
+      <navPoint id="navpoint-27" playOrder="27">
+         <navLabel>
+            <text>24 THE PAVILION</text>
+         </navLabel>
+         <content src="chapter-024.html"/>
+      </navPoint>
+      <navPoint id="navpoint-28" playOrder="28">
+         <navLabel>
+            <text>25 PORTHOS</text>
+         </navLabel>
+         <content src="chapter-025.html"/>
+      </navPoint>
+      <navPoint id="navpoint-29" playOrder="29">
+         <navLabel>
+            <text>26 ARAMIS AND HIS THESIS</text>
+         </navLabel>
+         <content src="chapter-026.html"/>
+      </navPoint>
+      <navPoint id="navpoint-30" playOrder="30">
+         <navLabel>
+            <text>27 THE WIFE OF ATHOS</text>
+         </navLabel>
+         <content src="chapter-027.html"/>
+      </navPoint>
+      <navPoint id="navpoint-31" playOrder="31">
+         <navLabel>
+            <text>28 THE RETURN</text>
+         </navLabel>
+         <content src="chapter-028.html"/>
+      </navPoint>
+      <navPoint id="navpoint-32" playOrder="32">
+         <navLabel>
+            <text>29 HUNTING FOR THE EQUIPMENTS</text>
+         </navLabel>
+         <content src="chapter-029.html"/>
+      </navPoint>
+      <navPoint id="navpoint-33" playOrder="33">
+         <navLabel>
+            <text>30 D'ARTAGNAN AND THE ENGLISHMAN</text>
+         </navLabel>
+         <content src="chapter-030.html"/>
+      </navPoint>
+      <navPoint id="navpoint-34" playOrder="34">
+         <navLabel>
+            <text>31 ENGLISH AND FRENCH</text>
+         </navLabel>
+         <content src="chapter-031.html"/>
+      </navPoint>
+      <navPoint id="navpoint-35" playOrder="35">
+         <navLabel>
+            <text>32 A PROCURATOR'S DINNER</text>
+         </navLabel>
+         <content src="chapter-032.html"/>
+      </navPoint>
+      <navPoint id="navpoint-36" playOrder="36">
+         <navLabel>
+            <text>33 SOUBRETTE AND MISTRESS</text>
+         </navLabel>
+         <content src="chapter-033.html"/>
+      </navPoint>
+      <navPoint id="navpoint-37" playOrder="37">
+         <navLabel>
+            <text>34 IN WHICH THE EQUIPMENT OF ARAMIS AND PORTHOS IS TREATED OF</text>
+         </navLabel>
+         <content src="chapter-034.html"/>
+      </navPoint>
+      <navPoint id="navpoint-38" playOrder="38">
+         <navLabel>
+            <text>35 A GASCON A MATCH FOR CUPID</text>
+         </navLabel>
+         <content src="chapter-035.html"/>
+      </navPoint>
+      <navPoint id="navpoint-39" playOrder="39">
+         <navLabel>
+            <text>36 DREAM OF VENGEANCE</text>
+         </navLabel>
+         <content src="chapter-036.html"/>
+      </navPoint>
+      <navPoint id="navpoint-40" playOrder="40">
+         <navLabel>
+            <text>37 MILADY'S SECRET</text>
+         </navLabel>
+         <content src="chapter-037.html"/>
+      </navPoint>
+      <navPoint id="navpoint-41" playOrder="41">
+         <navLabel>
+            <text>38 HOW, WITHOUT INCOMMODING HIMSELF, ATHOS PROCURES HIS EQUIPMENT</text>
+         </navLabel>
+         <content src="chapter-038.html"/>
+      </navPoint>
+      <navPoint id="navpoint-42" playOrder="42">
+         <navLabel>
+            <text>39 A VISION</text>
+         </navLabel>
+         <content src="chapter-039.html"/>
+      </navPoint>
+      <navPoint id="navpoint-43" playOrder="43">
+         <navLabel>
+            <text>40 A TERRIBLE VISION</text>
+         </navLabel>
+         <content src="chapter-040.html"/>
+      </navPoint>
+      <navPoint id="navpoint-44" playOrder="44">
+         <navLabel>
+            <text>41 THE SEIGE OF LA ROCHELLE</text>
+         </navLabel>
+         <content src="chapter-041.html"/>
+      </navPoint>
+      <navPoint id="navpoint-45" playOrder="45">
+         <navLabel>
+            <text>42 THE ANJOU WINE</text>
+         </navLabel>
+         <content src="chapter-042.html"/>
+      </navPoint>
+      <navPoint id="navpoint-46" playOrder="46">
+         <navLabel>
+            <text>43 THE SIGN OF THE RED DOVECOT</text>
+         </navLabel>
+         <content src="chapter-043.html"/>
+      </navPoint>
+      <navPoint id="navpoint-47" playOrder="47">
+         <navLabel>
+            <text>44 THE UTILITY OF STOVEPIPES</text>
+         </navLabel>
+         <content src="chapter-044.html"/>
+      </navPoint>
+      <navPoint id="navpoint-48" playOrder="48">
+         <navLabel>
+            <text>45 A CONJUGAL SCENE</text>
+         </navLabel>
+         <content src="chapter-045.html"/>
+      </navPoint>
+      <navPoint id="navpoint-49" playOrder="49">
+         <navLabel>
+            <text>46 THE BASTION SAINT–GERVAIS</text>
+         </navLabel>
+         <content src="chapter-046.html"/>
+      </navPoint>
+      <navPoint id="navpoint-50" playOrder="50">
+         <navLabel>
+            <text>47 THE COUNCIL OF THE MUSKETEERS</text>
+         </navLabel>
+         <content src="chapter-047.html"/>
+      </navPoint>
+      <navPoint id="navpoint-51" playOrder="51">
+         <navLabel>
+            <text>48 A FAMILY AFFAIR</text>
+         </navLabel>
+         <content src="chapter-048.html"/>
+      </navPoint>
+      <navPoint id="navpoint-52" playOrder="52">
+         <navLabel>
+            <text>49 FATALITY</text>
+         </navLabel>
+         <content src="chapter-049.html"/>
+      </navPoint>
+      <navPoint id="navpoint-53" playOrder="53">
+         <navLabel>
+            <text>50 CHAT BETWEEN BROTHER AND SISTER</text>
+         </navLabel>
+         <content src="chapter-050.html"/>
+      </navPoint>
+      <navPoint id="navpoint-54" playOrder="54">
+         <navLabel>
+            <text>51 OFFICER</text>
+         </navLabel>
+         <content src="chapter-051.html"/>
+      </navPoint>
+      <navPoint id="navpoint-55" playOrder="55">
+         <navLabel>
+            <text>52 CAPTIVITY: THE FIRST DAY</text>
+         </navLabel>
+         <content src="chapter-052.html"/>
+      </navPoint>
+      <navPoint id="navpoint-56" playOrder="56">
+         <navLabel>
+            <text>53 CAPTIVITY: THE SECOND DAY</text>
+         </navLabel>
+         <content src="chapter-053.html"/>
+      </navPoint>
+      <navPoint id="navpoint-57" playOrder="57">
+         <navLabel>
+            <text>54 CAPTIVITY: THE THIRD DAY</text>
+         </navLabel>
+         <content src="chapter-054.html"/>
+      </navPoint>
+      <navPoint id="navpoint-58" playOrder="58">
+         <navLabel>
+            <text>55 CAPTIVITY: THE FOURTH DAY</text>
+         </navLabel>
+         <content src="chapter-055.html"/>
+      </navPoint>
+      <navPoint id="navpoint-59" playOrder="59">
+         <navLabel>
+            <text>56 CAPTIVITY: THE FIFTH DAY</text>
+         </navLabel>
+         <content src="chapter-056.html"/>
+      </navPoint>
+      <navPoint id="navpoint-60" playOrder="60">
+         <navLabel>
+            <text>57 MEANS FOR CLASSICAL TRAGEDY</text>
+         </navLabel>
+         <content src="chapter-057.html"/>
+      </navPoint>
+      <navPoint id="navpoint-61" playOrder="61">
+         <navLabel>
+            <text>58 ESCAPE</text>
+         </navLabel>
+         <content src="chapter-058.html"/>
+      </navPoint>
+      <navPoint id="navpoint-62" playOrder="62">
+         <navLabel>
+            <text>59 WHAT TOOK PLACE AT PORTSMOUTH AUGUST 23, 1628</text>
+         </navLabel>
+         <content src="chapter-059.html"/>
+      </navPoint>
+      <navPoint id="navpoint-63" playOrder="63">
+         <navLabel>
+            <text>60 IN FRANCE</text>
+         </navLabel>
+         <content src="chapter-060.html"/>
+      </navPoint>
+      <navPoint id="navpoint-64" playOrder="64">
+         <navLabel>
+            <text>61 THE CARMELITE CONVENT AT BETHUNE</text>
+         </navLabel>
+         <content src="chapter-061.html"/>
+      </navPoint>
+      <navPoint id="navpoint-65" playOrder="65">
+         <navLabel>
+            <text>62 TWO VARIETIES OF DEMONS</text>
+         </navLabel>
+         <content src="chapter-062.html"/>
+      </navPoint>
+      <navPoint id="navpoint-66" playOrder="66">
+         <navLabel>
+            <text>63 THE DROP OF WATER</text>
+         </navLabel>
+         <content src="chapter-063.html"/>
+      </navPoint>
+      <navPoint id="navpoint-67" playOrder="67">
+         <navLabel>
+            <text>64 THE MAN IN THE RED CLOAK</text>
+         </navLabel>
+         <content src="chapter-064.html"/>
+      </navPoint>
+      <navPoint id="navpoint-68" playOrder="68">
+         <navLabel>
+            <text>65 TRIAL</text>
+         </navLabel>
+         <content src="chapter-065.html"/>
+      </navPoint>
+      <navPoint id="navpoint-69" playOrder="69">
+         <navLabel>
+            <text>66 EXECUTION</text>
+         </navLabel>
+         <content src="chapter-066.html"/>
+      </navPoint>
+      <navPoint id="navpoint-70" playOrder="70">
+         <navLabel>
+            <text>67 CONCLUSION</text>
+         </navLabel>
+         <content src="chapter-067.html"/>
+      </navPoint>
+      <navPoint id="navpoint-71" playOrder="71">
+         <navLabel>
+            <text>EPILOGUE</text>
+         </navLabel>
+         <content src="chapter-068.html"/>
+      </navPoint>
+      <navPoint id="navpoint-72" playOrder="72">
+         <navLabel>
+            <text>Footnotes</text>
+         </navLabel>
+         <content src="footnotes.html"/>
+      </navPoint>
+   </navMap>
+</ncx>

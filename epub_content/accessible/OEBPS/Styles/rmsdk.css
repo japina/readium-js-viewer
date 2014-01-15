@@ -1,0 +1,91 @@
+/* BoD Standard CSS, Flowable Books, Version 2.0 */
+/* This stylesheet is intended to target rmsdk-based devices */
+
+@charset "UTF-8";
+
+/* This section is for for testing purposes only */
+
+p.target_device {
+font-size: 0.8em;
+font-style: italic;
+font-weight: bold;
+color: #0000ff;
+text-align: center;
+}
+
+p.color_code
+{
+color: #0000ff;
+}
+
+p.target_device:after{
+content:"This eBook is running on an eInk/ADE device."
+}
+
+span.bod_standard
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+span.rmsdk
+{
+font-weight: bold;
+text-decoration: none;
+}
+
+span.ios
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+
+span.kf8
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+/*Keeping images and captions together on rmsdk */
+
+
+div.group_img /*div to keep images and captions together*/
+{
+page-break-inside: avoid;
+width: 95%;
+}
+
+
+/* Classes for drop caps, tables and footnotes on different devices via media query */
+
+span.dropcap
+{
+font-weight:bold;
+font-size: 2.9em;
+float: left;
+line-height:0.99em;
+margin-right: 0.025em;
+}
+
+div.tablequery
+{
+display:none;
+}
+
+img.tablequery
+{
+display:inline-block;
+}
+
+p.tablequery_img
+{
+display:inline-block;
+}
+
+p.tablequery_html
+{
+display:none;
+}
+
+

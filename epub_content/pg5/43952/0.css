@@ -1,0 +1,135 @@
+@charset "utf-8";
+/**/
+body {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+h1, h2, h3 {
+    text-align: center;
+    clear: both;
+    page-break-before: always
+    }
+p {
+    text-indent: 1em;
+    margin-top: 0.2em;
+    text-align: justify;
+    margin-bottom: 0.2em
+    }
+p.drop-cap {
+    text-indent: 0
+    }
+p.drop-cap:first-letter {
+    font-size: 3em;
+    margin: 0.05em 0.1em 0 0;
+    line-height: 0.75
+    }
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both
+    }
+hr.tb {
+    width: 0%;
+    margin-top: 1em;
+    margin-bottom: 1em
+    }
+hr.chap {
+    width: 65%
+    }
+ul.index {
+    list-style-type: none
+    }
+li.isub2 {
+    text-indent: 2em
+    }
+li.isub10 {
+    text-indent: 10em
+    }
+table {
+    margin-left: auto;
+    margin-right: auto
+    }
+.tdr {
+    text-align: right
+    }
+.tdpart {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em
+    }
+.pagenum {
+    font-size: smaller;
+    text-align: right
+    }
+.center {
+    text-align: center
+    }
+.right {
+    text-align: right
+    }
+.smcap {
+    font-variant: small-caps
+    }
+.u {
+    text-decoration: underline
+    }
+.title {
+    text-indent: 0;
+    text-align: center;
+    font-size: x-large;
+    line-height: 1.2;
+    font-weight: bold
+    }
+.subtitle {
+    text-indent: 0;
+    text-align: center;
+    margin-bottom: 1em
+    }
+.figcenter {
+    margin: auto;
+    text-align: center
+    }
+.small-space-above {
+    margin-top: 2em
+    }
+.space-above {
+    margin-top: 6em
+    }
+ul#corrections {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+    }
+ul#corrections li {
+    margin: 0.5em 0.25em;
+    padding-left: 2em
+    }
+ul#corrections .correction {
+    text-decoration: underline
+    }
+.tnote {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em
+    }
+div.tnote p {
+    text-indent: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.51em;
+    text-align: justify;
+    margin-bottom: 0.49em
+    }
+@media all {
+    /* was @media handheld */
+    hr.chap {
+        width: 0%
+        }
+    }
+/**/

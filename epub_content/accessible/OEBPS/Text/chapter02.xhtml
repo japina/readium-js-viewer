@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!-- DOCTYPE deleted for epub3 upgrade -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<head>
+  <title>BoD - Best Practice Guide</title>
+  <link href="../Styles/bod_standard_v2.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/rmsdk.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/kf8.css" media="amzn-kf8" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/ios.css" media="only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1), only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2), only screen and (device-height: 480px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2), only screen and (device-height: 568px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h1 id="chapter02">2. Rule Set</h1>
+
+  <p class="normal">The current version of the Rule Set is <b>1.11</b>.</p>
+
+  <h2 id="chapter02b">eBook Conversion Specifications:</h2>
+
+  <p class="normal"><b>Input:</b> Text PDF</p>
+
+  <p class="normal"><b>Outputs:</b> ePUB. If only ePub is delivered, it is optimized for display on different reading devices, including iPad and Kindle.</p>
+
+  <ol>
+    <li>
+      <b>File name</b> should be <b>PrintISBN_Version_format.file_extension</b> format. Please find below the examples,
+
+      <ul>
+        <li><code>978XXXXXXXXXX_1_epub_all.epub</code> for the ePub Version which works on all devices including the ipad compatible.</li>
+      </ul>
+    </li>
+
+    <li>
+      <p class="normal"><b>Cover</b> jpg has to be added inside the ebook in order to display it as first page of the ebook. It should have at least 768 x 1024 pixel at 300 dpi. The original image ration has to be retained and the image scaled to either maximum height or maximum width. Additional margin around the cover image should be in white color; background color should be undefined. Applicable Formats: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>Image resolution</b> of 300 dpi should not be reduced. Maximum image quality is to be used. Applicable Formats: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal">Enclose <b>images</b> and captions and quotes and quote authors in <code>&lt;div class="group"&gt;</code> element.<br/>
+      <b>Images</b> must have an <code>&lt;alt&gt;</code> attribute, preferably a short description. <code>Alt="image"</code> is not allowed, if a description is not possible, <code>alt=""</code> may be used. Images must be enclosed in an <code>&lt;div&gt;</code> that contains only the image source, no <code>&lt;p&gt;</code> tags, links or any other elements. Sizing is defined in the CSS.<br/>
+      Images must contain less than 2 million pixels.<br/>
+      Image captions must have the same alignment as the image.</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>There should be no blank pages (i.e. after the cover image) in the eBook.<br/>
+      Applicable Formats: ePUB and Mobi</b></p>
+    </li>
+
+    <li>
+      <p class="normal"><b>Halftitle</b> (usually first page of frontmatter) should be ignored/removed in the eBook.<br/>
+      Applicable Formats: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>Title page</b> (usually third page of frontmatter) is set as text using separate styles in CSS. Hyphenation should be suppressed. Styles are matched to PDF. Titlepage should follow immediately after cover. If <b>Publisher</b> is <b>BoD</b> Books on Demand, <b>“Books on Demand” is added on title page</b> in matching typeface.</p>
+
+      <p class="normal">Applicable Formats: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal">The <b>copyright page</b> has to be placed directly after the text. Alignment of the copyright page is top-alignment. It should fit on one page, styles do not need to be matched to PDF.<br/>
+      In the <b>copyright</b>, Books on Demand GmbH must <b>contain a hyperlink</b> to http://www.bod.de or to http://www.bod.fr, http://www.bod.dk, http://www.bod.se, http://www.bod.fi<br/>
+      Applicable Formats: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal">Print ISBN number in copyright page should be replaced by <b>eBook ISBN</b> from provided in metadata information.<br/>
+      Applicable Formats: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>XHTML TOC</b> (additional to NCX) should be included in the ebook. If chapter headers are present in the source file, but no toc, an xhtml toc is created. Only titles without headers or with more than 100 toc entries receive no html.toc<br/>
+      Applicable Format: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>Each chapter</b> should be coded as a <b>separate html</b> file within the epub</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>BoD standard CSS</b> are to be used for all titles; unused elements are deleted from the CSS. Multiple CSS are used for different devices (iOS, kf8, rmsdk).</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>Folder structure</b> within the epub should be Fonts, Images, Misc, Styles &amp; Text</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>Language setting in content.opf must be main language of the book.</b></p>
+    </li>
+
+    <li>
+      <b>PDF matching and ePub styling rules</b>: General styling and layout are matched to the source PDF, but the following style rules apply to all epub output:
+
+      <ol>
+        <li><b>Alignment</b>: Headers must be left aligned or centered. Lists and bibliographies and similar appendices containing long hyperlinks must be left aligned. If necessary, soft hyphens are to be added to ensure proper line breaks. Excessive use of <code>&amp;nbsp;</code> or pixel defined spaces for alignment are not allowed.</li>
+
+        <li><b>TOC</b>: No <code>&lt;/br&gt;</code> are used within toc entries. If possible, a numbered TOC is coded as an ordered list <code>&lt;ol&gt;</code>.</li>
+
+        <li><b>Top and bottom margins</b> in excess of 3 em are not allowed for <code>&lt;p&gt;</code> elements.</li>
+
+        <li><b>Font Size</b>: The standard font used for <code>&lt;p&gt;</code> elements in each title is sized at 1 em by not specifying a font-size in the CSS.</li>
+
+        <li><b>Tables shall be used for tabular data only.</b></li>
+
+        <li><b>TOC shall not be coded as a table</b> but preferably <b>as a list.</b></li>
+      </ol>
+    </li>
+
+    <li>
+      <p class="normal">Special attention has to be paid to the correct display of <b>special characters</b> and umlauts, particularly in the system generated header on iPad and Sony devices. <b>Characters/Fonts</b> not supported by Apple, Kindle, Sony and other popular eReaders must be coded as scalable vector graphics (SVG) or using a licensed font provided by BoD. No other commercial fonts that require a license are to be embedded.</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>References to material included only in print titles</b> such as CDs on front- and backmatter are to be removed.</p>
+    </li>
+
+    <li>
+      <p class="normal">If clearly <b>commercial ads</b> or <b>links to major book retailers</b>, e.g. <a id="index01">amazon</a> or kobo are contained, titles are to be flagged for BoD review.</p>
+    </li>
+
+    <li>
+      <p class="normal">If a title contains <b>tables</b> with <b>more 35 characters</b> per row or <b>more than 14 rows</b>, they are coded as html and as an image using <b>media queries</b> defined in the standard CSS. If necessary, several zooming levels are captured for the image. <b>Tables with less</b> columns/characters are coded <b>just as html</b>. "colgroup"should be avoided</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>Html coding</b> shall not contain tags without function. Bold and italic should not be coded using span elements.</p>
+    </li>
+
+    <li>
+      <p class="normal"><b>Lists</b> are to be formatted using <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags.</p>
+    </li>
+
+    <li>
+      <p class="normal">The following are to be included in every file: <b>Guide details</b> for Mobi TOC, <b>page-template.xpgt</b> for ADE, <b>display-options</b> file for Apple. Applicable formats: ePuB and Mobi</p>
+    </li>
+
+    <li>Standard <b>TOC</b> format should be followed for the frontmatter as mentioned below regardless where the PDF TOC is located (frontmatter or backmatter).<br/>
+      <b>Applicable Formats</b>: ePUB and Mobi
+
+      <ol class="low_chars">
+        <li>Cover image entry should not be included in TOC (both NCX and XHTML), although found as a part of the book.<br/>
+        Applicable Formats: ePUB and Mobi</li>
+
+        <li>TOC wording has to follow the headlines in the PDF; for standard items without headline in PDF see translation list.</li>
+      </ol>
+
+      <p class="normal"><b>TOC elements translation list</b></p>
+
+      <div class="tablequery">
+        <table class="table1">
+          <tr>
+            <th class="th1">English</th>
+
+            <th class="th1">German</th>
+
+            <th class="th1">French</th>
+          </tr>
+
+          <tr>
+            <td class="td_left">Title Page</td>
+
+            <td class="td_left">Titelseite</td>
+
+            <td class="td_left">Page de titre</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Copyright</td>
+
+            <td class="td_left">Impressum</td>
+
+            <td class="td_left">Page de copyright</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Table of Contents</td>
+
+            <td class="td_left">Inhaltsverzeichnis</td>
+
+            <td class="td_left">Sommaire</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Epigraph</td>
+
+            <td class="td_left">Motto</td>
+
+            <td class="td_left">Epigraphe</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Dedication</td>
+
+            <td class="td_left">Widmung</td>
+
+            <td class="td_left">Dédicace</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Acknowledgements</td>
+
+            <td class="td_left">Danksagung</td>
+
+            <td class="td_left">Remerciements</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Start of Text</td>
+
+            <td class="td_left">Textbeginn</td>
+
+            <td class="td_left">Début du texte</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Teaser Chapter</td>
+
+            <td class="td_left">Vorschau</td>
+
+            <td class="td_left">Aperçu</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">About the book</td>
+
+            <td class="td_left">Über das Buch</td>
+
+            <td class="td_left">À propos du livre</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">About the author (m,f)</td>
+
+            <td class="td_left">Über den Autor (m)/ Über die Autorin (f)</td>
+
+            <td class="td_left">À propos de l’auteur</td>
+          </tr>
+
+          <tr>
+            <th class="th1">Danish</th>
+
+            <th class="th1">Swedish</th>
+
+            <th class="th1">Finnish</th>
+          </tr>
+
+          <tr>
+            <td class="td_left">Titelside</td>
+
+            <td class="td_left">Titelsida</td>
+
+            <td class="td_left">Nimiösivu</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Kolofon</td>
+
+            <td class="td_left">Impressum</td>
+
+            <td class="td_left">Valmistusmerkinnät</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Indholdsfortegnelse</td>
+
+            <td class="td_left">Innehållsförteckning</td>
+
+            <td class="td_left">Sisällysluettelo</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">&#160;Epigraf</td>
+
+            <td class="td_left">Motto</td>
+
+            <td class="td_left">Motto</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Dedikation</td>
+
+            <td class="td_left">Dedikation</td>
+
+            <td class="td_left">Omistuskirjoitus</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">&#160;Takkeord</td>
+
+            <td class="td_left">Tackord</td>
+
+            <td class="td_left">Kiitokset</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Tekstbegyndelse</td>
+
+            <td class="td_left">Textens inledning</td>
+
+            <td class="td_left">Tekstin alku</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">&#160;Uddrag</td>
+
+            <td class="td_left">Förhandsgranskning</td>
+
+            <td class="td_left">Esikatselu</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Om bogen</td>
+
+            <td class="td_left">Om boken</td>
+
+            <td class="td_left">Lisätietoja kirjasta</td>
+          </tr>
+
+          <tr>
+            <td class="td_left">Om forfatteren</td>
+
+            <td class="td_left">Om författaren</td>
+
+            <td class="td_left">Lisätietoja kirjailijasta</td>
+          </tr>
+        </table>
+      </div><img alt="Translation table" class="tablequery" src="../Images/translation_table_a.jpg"/> <img alt="Translation table" class="tablequery" src="../Images/translation_table_b.jpg"/>
+
+      <p class="normal">Applicable Formats: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal">The <b>start of the text</b> has to be represented within TOC's (both NCX and XHTML), if the PDF content doesn't contain a chapter structure and headlines, to mark the beginning of the content (please use expression from translation list below). It should be referenced in the guide/reference as <code>type="other.reader-start-page"</code>.</p>
+    </li>
+
+    <li>
+      <p class="normal">There should be no space characters in front of question or exclamation marks (except for French texts).<br/>
+      Applicable Formats: ePUB and Mobi</p>
+    </li>
+
+    <li>
+      <p class="normal">The margins in the <code>page-template.xpgt</code> should be 1.25 em.<br/>
+      Applicable Formats: ePUB</p>
+    </li>
+
+    <li>Per Deutsche National Bibliothek requirement, the <code>id</code> element in <code>ncx.toc</code> must be a unique identifier and not identical to the corresponding play order element. For <code>id</code>, <code>chapter-1</code> or <code>navpoint-1</code> should be used.</li>
+  </ol>
+</body>
+</html>

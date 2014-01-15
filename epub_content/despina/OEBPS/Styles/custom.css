@@ -1,0 +1,8 @@
+H1 { font-size: 18pt; font-family: sans-serif; color: #292652; }
+H2 { font-size: 16pt; font-family: sans-serif; text-align: left; }
+H3 { font-size: 14pt; font-family: sans-serif; text-align: left; }
+H4, H5, H6, H7 { font-size: 12pt; font-family: sans-serif; text-align: left; }
+H1 { text-align: left;}
+P+P { text-indent: 0em; }
+P, TD { line-height: 140%; font-family: serif; }
+BODY { line-height: 140%; font-family: serif; }

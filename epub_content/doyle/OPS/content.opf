@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="EPB-UUID" version="2.0">
+   <metadata xmlns:opf="http://www.idpf.org/2007/opf"
+             xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <dc:title>The Return of Sherlock Holmes</dc:title>
+      <dc:creator opf:role="aut" opf:file-as="Doyle, Arthur Conan">Arthur Conan Doyle</dc:creator>
+      <dc:publisher>epubBooks (www.epubbooks.com)</dc:publisher>
+      <dc:date opf:event="epub-publication">2011-06-15</dc:date>
+      <dc:subject>Detective</dc:subject>
+      <dc:subject>Mystery</dc:subject>
+      <dc:subject>Crime</dc:subject>
+      <dc:source>Project Gutenberg</dc:source>
+      <dc:rights>
+            Provided for free by epubBooks.com. Not for commercial use.
+            This EPUB eBook is released under a Creative Commons (BY-NC-ND/3.0) Licence.
+            Source text and images are in the Public Domain.
+      </dc:rights>
+      <dc:identifier id="EPB-UUID">urn:uuid:9270b24b-74b3-4466-8a4a-a74f7629979e</dc:identifier>
+      <dc:language>en</dc:language>
+   </metadata>
+   <manifest>
+      <!-- Content Documents -->
+      <item id="titlepage" href="title.html" media-type="application/xhtml+xml"/>
+      <item id="epubbooksinfo" href="epubbooksinfo.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-001" href="chapter-001.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-002" href="chapter-002.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-003" href="chapter-003.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-004" href="chapter-004.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-005" href="chapter-005.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-006" href="chapter-006.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-007" href="chapter-007.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-008" href="chapter-008.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-009" href="chapter-009.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-010" href="chapter-010.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-011" href="chapter-011.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-012" href="chapter-012.html" media-type="application/xhtml+xml"/>
+      <item id="chapter-013" href="chapter-013.html" media-type="application/xhtml+xml"/>
+
+      <!-- CSS Style Sheets -->
+      <item id="title-page-css" href="css/titlepage.css" media-type="text/css"/>
+      <item id="main-css" href="css/book.css" media-type="text/css"/>
+
+      <!-- Images -->
+      <item id="epubbooks-logo" href="images/epubbooks-logo.png" media-type="image/png"/>
+
+      <!-- NCX -->
+      <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+   </manifest>
+   <spine toc="ncx">
+      <itemref idref="titlepage" linear="yes"/>
+      <itemref idref="epubbooksinfo" linear="yes"/>
+      <itemref idref="chapter-001" linear="yes"/>
+      <itemref idref="chapter-002" linear="yes"/>
+      <itemref idref="chapter-003" linear="yes"/>
+      <itemref idref="chapter-004" linear="yes"/>
+      <itemref idref="chapter-005" linear="yes"/>
+      <itemref idref="chapter-006" linear="yes"/>
+      <itemref idref="chapter-007" linear="yes"/>
+      <itemref idref="chapter-008" linear="yes"/>
+      <itemref idref="chapter-009" linear="yes"/>
+      <itemref idref="chapter-010" linear="yes"/>
+      <itemref idref="chapter-011" linear="yes"/>
+      <itemref idref="chapter-012" linear="yes"/>
+      <itemref idref="chapter-013" linear="yes"/>
+   </spine>
+</package>

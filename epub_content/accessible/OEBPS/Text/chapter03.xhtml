@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!-- DOCTYPE deleted for epub3 upgrade -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<head>
+  <title>BoD - Best Practice Guide</title>
+  <link href="../Styles/bod_standard_v2.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/rmsdk.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/kf8.css" media="amzn-kf8" rel="stylesheet" type="text/css"/>
+ <link href="../Styles/ios.css" media="only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1), only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2), only screen and (device-height: 480px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2), only screen and (device-height: 568px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="stylesheet" type="text/css"/> 
+</head>
+
+<body>
+  <h1 id="chapter03">3. Stylesheets</h1>
+
+  <p class="normal">BoD <a id="index03"/>CSS are to be used for all titles. Some styles in CSS, like drop cap styles, are applied to all titles, others are matched to PDF in accordance with BoD conversion rules. Additional styles and coding has to be commented in the CSS and follow understandable naming conventions. Styles not used for a specific title should be deleted from that title's CSS. Our goal is a structured archive with consistent styles and highly readable and easy to edit CSS.</p>
+
+  <p class="normal">Each html file has to contain links to all CSS. From the html file, devices are targeted by different media queries and directed to applicable styles in the corresponding CSS.</p>
+
+  <h2 id="chapter03a">3.1 Default CSS "bod_standard.css"</h2>
+
+  <p class="normal">BoD Default CSS contains all styles supported by all platforms as well as those for which we found a multi-platform solution. Current version is v2.</p>
+
+  <h2 id="chapter03b">3.2 CSS for Kindle Devices "kf8.css"</h2>
+
+  <p class="normal">Kindle devices require special coding and offer limited support of complex, CSS-based layout options. At this point, all Kindle devices can be targeted using @kf8 media queries. It is not possible to distinguish between one KF8 device and another, so the Kindle Fire applies the same styles as the Kindle eInk devices. With BoD standard CSS version 2, we discontinue support for mobi7, because amazon now offers an update to KF8 for all devices.</p>
+
+  <h2 id="chapter03d">3.3 CSS for iOs devices "iOs.css"</h2>
+
+  <p class="normal">Since Apple devices offer the best display options for tables and the widest support for epub3 features, we target them separately. On iphones, tables with less than 35 characters per row are displayed as html.</p>
+
+  <h2 id="chapter03c">3.4 CSS for Small Displays and Apps "rmsdk.css"</h2>
+
+  <p class="normal">For display in RMSDK-based reading apps and small eInk Readers, a seperate CSS is used. On all these devices, tables are displayed as images.&#160;</p>
+</body>
+</html>

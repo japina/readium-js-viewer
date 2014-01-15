@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- DOCTYPE deleted for epub3 upgrade -->
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+    <head>
+        <meta content="URN:ISBN: 978-3-1234-5678-9" name="dtb:uid"/>
+        <meta content="1" name="dtb:depth"/>
+        <meta content="5" name="dtb:totalPageCount"/>
+        <meta content="5" name="dtb:maxPageNumber"/>
+    </head>
+    <docTitle>
+        <text>BoD Best Practice Guide</text>
+    </docTitle>
+    <navMap>
+        <navPoint id="navpoint-1" playOrder="1">
+            <navLabel>
+                <text>Titlepage</text>
+            </navLabel>
+            <content src="Text/title.xhtml"/>
+        </navPoint>
+        <navPoint id="navpoint-2" playOrder="2">
+            <navLabel>
+                <text>Contents</text>
+            </navLabel>
+            <content src="Text/contents.xhtml"/>
+        </navPoint>
+        <navPoint id="navpoint-3" playOrder="3">
+            <navLabel>
+                <text>1. Introduction</text>
+            </navLabel>
+            <content src="Text/chapter01.xhtml#chapter01"/>
+        </navPoint>
+        <navPoint id="navpoint-4" playOrder="4">
+            <navLabel>
+                <text>2. Rule Set</text>
+            </navLabel>
+            <content src="Text/chapter02.xhtml#chapter02"/>
+         </navPoint>
+        <navPoint id="navpoint-5" playOrder="5">
+            <navLabel>
+                <text>3. Stylesheets</text>
+            </navLabel>
+            <content src="Text/chapter03.xhtml#chapter03"/>
+        <navPoint id="navpoint-6" playOrder="6">
+            <navLabel>
+                <text>3.1 Default CSS "bod_standard.css"</text>
+            </navLabel>
+            <content src="Text/chapter03.xhtml#chapter03a"/>
+        </navPoint>
+        <navPoint id="navpoint-7" playOrder="7">
+            <navLabel>
+                <text>3.2 CSS for Kindle Devices "kf8.css"</text>
+            </navLabel>
+            <content src="Text/chapter03.xhtml#chapter03b"/>
+        </navPoint>
+                   <navPoint id="navpoint-8" playOrder="8">
+                <navLabel>
+                    <text>3.3 CSS for iOs Devices "iOs.css"</text>
+                </navLabel>
+                <content src="Text/chapter03.xhtml#chapter03d"/>
+            </navPoint>
+ <navPoint id="navpoint-9" playOrder="9">
+            <navLabel>
+                <text>3.4 CSS for Small Displays and Apps "rmsdk.css"</text>
+            </navLabel>
+            <content src="Text/chapter03.xhtml#chapter03c"/>
+        </navPoint>
+        </navPoint>
+        <navPoint id="navpoint-10" playOrder="10">
+            <navLabel>
+                <text>4. Formating Examples</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04"/>
+        <navPoint id="navpoint-11" playOrder="11">
+            <navLabel>
+                <text>4.1 Text</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a"/>
+        <navPoint id="navpoint-12" playOrder="12">
+            <navLabel>
+                <text>4.1.1 Headers</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a1"/>
+        </navPoint>
+        <navPoint id="navpoint-13" playOrder="13">
+            <navLabel>
+                <text>4.1.2 Plain Text</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a2"/>
+        </navPoint>
+        <navPoint id="navpoint-14" playOrder="14">
+            <navLabel>
+                <text>4.1.3 Quotes, Mottos, Dedications</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a3"/>
+        </navPoint>
+        <navPoint id="navpoint-15" playOrder="15">
+            <navLabel>
+                <text>4.1.4 Drop Caps and Small Caps</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a4"/>
+        </navPoint>
+        <navPoint id="navpoint-16" playOrder="16">
+            <navLabel>
+                <text>4.1.5 Lists</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a5"/>
+        </navPoint>
+        <navPoint id="navpoint-17" playOrder="17">
+            <navLabel>
+                <text>4.1.6 Tables</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a6"/>
+        </navPoint>
+        <navPoint id="navpoint-18" playOrder="18">
+            <navLabel>
+                <text>4.1.7 Boxes, Lines, Pullquotes</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a7"/>
+        </navPoint>
+        <navPoint id="navpoint-19" playOrder="19">
+            <navLabel>
+                <text>4.1.8 Footnotes</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a8"/>
+        </navPoint>
+        <navPoint id="navpoint-20" playOrder="20">
+            <navLabel>
+                <text>4.1.9 Bibliographies, Indexes</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04a9"/>
+        </navPoint>
+        </navPoint>
+        <navPoint id="navpoint-21" playOrder="21">
+            <navLabel>
+                <text>4.2 Images</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04b"/>
+        <navPoint id="navpoint-22" playOrder="22">
+            <navLabel>
+                <text>4.2.1 Images and Captions</text>
+            </navLabel>
+            <content src="Text/chapter04.xhtml#chapter04b1"/>
+        </navPoint>
+        </navPoint>
+        </navPoint>
+        <navPoint id="navpoint-23" playOrder="23">
+            <navLabel>
+                <text>5. Character Support</text>
+            </navLabel>
+            <content src="Text/chapter05.xhtml#chapter05"/>
+        <navPoint id="navpoint-24" playOrder="24">
+            <navLabel>
+                <text>5.1 Examples of foreign characters</text>
+            </navLabel>
+            <content src="Text/chapter05.xhtml#chapter05a"/>
+        </navPoint>
+        <navPoint id="navpoint-25" playOrder="25">
+            <navLabel>
+                <text>5.2 Table of Special Characters in HTML</text>
+            </navLabel>
+            <content src="Text/chapter05.xhtml#chapter05b"/>
+        </navPoint>
+        <navPoint id="navpoint-26" playOrder="26">
+            <navLabel>
+                <text>5.3 Embedding Fonts to Display Special Characters</text>
+            </navLabel>
+            <content src="Text/chapter05.xhtml#chapter05c"/>
+        </navPoint>
+        </navPoint>
+        <navPoint id="navpoint-27" playOrder="27">
+            <navLabel>
+                <text>Copyright</text>
+            </navLabel>
+            <content src="Text/copyright.xhtml"/>
+        </navPoint>
+    </navMap>
+</ncx>

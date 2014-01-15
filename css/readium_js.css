@@ -5,7 +5,7 @@ html {
 
 body {
     height: 100%;
-    width: 100%;
+    width: 100%; 
     margin: 0;
     padding: 0px 10px 10px 10px;
 /*    position: absolute; */
@@ -29,11 +29,12 @@ iframe {
 /*Fixed layout */
 
 #fixed-book-frame {
-    position: absolute !important;
+    position: absolute !important; 
+
 }
 
 .fixed-page-frame {
-    position: absolute !important;
+    position: absolute !important; 
 }
 
 .iframe-fixed {
@@ -45,7 +46,7 @@ iframe {
 /*Reflowable layout*/
 
 #reflowable-book-frame {
-    position: absolute !important;
+    position: absolute !important; 
     left:0;
     top:0;
     right: 0;
@@ -53,7 +54,7 @@ iframe {
 }
 
 #reflowable-content-frame {
-    position: absolute !important;
+    position: absolute !important;    
     opacity: 1;
     visibility: visible;
     overflow: hidden;

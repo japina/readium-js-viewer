@@ -1,0 +1,113 @@
+@charset "utf-8";
+/**/
+p {
+    margin-top: 0.75em;
+    text-align: justify;
+    margin-bottom: 0.75em
+    }
+body {
+    margin-left: 12%;
+    margin-right: 12%
+    }
+.pagenum {
+    font-size: smaller;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal
+    }
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    clear: both
+    }
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both
+    }
+table {
+    margin-left: auto;
+    margin-right: auto
+    }
+.giant {
+    font-size: 200%
+    }
+.huge {
+    font-size: 150%
+    }
+.large {
+    font-size: 125%
+    }
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%
+    }
+.note {
+    margin-left: 20%;
+    margin-right: 20%
+    }
+.title {
+    text-align: center;
+    font-size: 125%
+    }
+.gesp {
+    letter-spacing: 0.2em;
+    margin-right: -0.2em
+    }
+.container {
+    text-align: center
+    }
+.poetry {
+    display: inline-block;
+    text-align: left
+    }
+.right {
+    text-align: right
+    }
+.center {
+    text-align: center
+    }
+.smcap {
+    font-variant: small-caps
+    }
+.smcaplc {
+    text-transform: lowercase;
+    font-variant: small-caps
+    }
+.figcenter {
+    margin: auto;
+    text-align: center
+    }
+.bbox {
+    color: gray;
+    margin: auto;
+    text-align: center
+    }
+.dropfig {
+    clear: left;
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em
+    }
+p.dropcap:first-letter {
+    font-size: 250%;
+    line-height: 83%
+    }
+.caps {
+    text-transform: uppercase
+    }
+a:link {
+    color: #00f;
+    text-decoration: none
+    }
+a:visited {
+    color: #63c;
+    text-decoration: none
+    }
+.spacer {
+    padding-left: 1em;
+    padding-right: 1em
+    }
+/**/

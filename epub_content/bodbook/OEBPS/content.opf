@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package unique-identifier="id" version="3.0" xmlns="http://www.idpf.org/2007/opf" prefix="rendition: http://www.ipdf.org/vocab/rendition/#">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <meta property="dcterms:modified">2014-01-09T17:24:23Z</meta>
+    <meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+    <meta property="title-type" refines="#t1">main</meta>
+    <meta property="display-seq" refines="#t1">1</meta>
+    <meta property="title-type" refines="#t2">subtitle</meta>
+    <meta property="display-seq" refines="#t2">2</meta>
+    <meta content="Ebook-lib 0.15.0" name="generator"/>
+    <dc:publisher id="publisher">BoD</dc:publisher>
+    <dc:identifier id="id">booktype:a002</dc:identifier>
+    <dc:identifier id="eBookISBN">1122122111111</dc:identifier>
+    <dc:creator id="author">Full name of the user</dc:creator>
+    <dc:language>de-DE</dc:language>
+    <dc:title id="t1">Book title</dc:title>
+    <dc:title id="t2">Subtitle for the book</dc:title>
+  </metadata>
+  <manifest>
+    <item href="Text/der-kerl.xhtml" id="chapter_0" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Text/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+    <item href="Styles/bod_standard.css" id="stylesheet" media-type="text/css"/>
+    <item href="Styles/custom.css" id="custom.css" media-type="text/css"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="nav"/>
+    <itemref idref="chapter_0"/>
+  </spine>
+  <guide>
+    <reference href="Text/nav.xhtml" title="Inhaltsverzeichnis" type="toc"/>
+    <reference href="Text/der-kerl.xhtml#toc_marker-0" title="Der Kerl" type="text"/>
+  </guide>
+</package>

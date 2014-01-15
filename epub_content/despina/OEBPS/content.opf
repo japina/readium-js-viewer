@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package unique-identifier="id" version="3.0" xmlns="http://www.idpf.org/2007/opf" prefix="rendition: http://www.ipdf.org/vocab/rendition/#">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <meta property="dcterms:modified">2013-12-10T11:43:30Z</meta>
+    <meta property="title-type" refines="#t1">main</meta>
+    <meta property="display-seq" refines="#t1">1</meta>
+    <meta property="title-type" refines="#t2">subtitle</meta>
+    <meta property="display-seq" refines="#t2">2</meta>
+    <meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+    <meta content="Ebook-lib 0.15.0" name="generator"/>
+    <dc:publisher id="publisher">BoD</dc:publisher>
+    <dc:identifier id="id">booktype:a201060</dc:identifier>
+    <dc:identifier id="eBookISBN">noch_einfuegen</dc:identifier>
+    <dc:creator id="author">Despina Muth-Seidel</dc:creator>
+    <dc:language>de-DE</dc:language>
+    <dc:title id="t1">Aequilibrium</dc:title>
+    <dc:title id="t2">Das Gewicht der Federn</dc:title>
+    <meta content="cover_image" name="cover"></meta>
+  </metadata>
+  <manifest>
+    <item href="Text/aequilibrium.xhtml" id="chapter_0" media-type="application/xhtml+xml"/>
+    <item href="Text/prolog.xhtml" id="chapter_1" media-type="application/xhtml+xml"/>
+    <item href="Text/eins.xhtml" id="chapter_2" media-type="application/xhtml+xml"/>
+    <item href="Text/zwei.xhtml" id="chapter_3" media-type="application/xhtml+xml"/>
+    <item href="Text/drei.xhtml" id="chapter_4" media-type="application/xhtml+xml"/>
+    <item href="Text/vier.xhtml" id="chapter_5" media-type="application/xhtml+xml"/>
+    <item href="Text/impressum.xhtml" id="impressum" media-type="application/xhtml+xml"/>
+    <item href="Images/bod_logo.jpg" id="image_0" media-type="image/jpeg"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Text/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+    <item href="Text/cover.xhtml" id="cover" media-type="application/xhtml+xml"/>
+    <item href="Images/cover.jpg" id="cover_image" media-type="image/jpeg" properties="cover-image"/>
+    <item href="Styles/bod_standard.css" id="stylesheet" media-type="text/css"/>
+    <item href="Styles/custom.css" id="custom.css" media-type="text/css"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover"/>
+    <itemref idref="nav"/>
+    <itemref idref="chapter_0"/>
+    <itemref idref="chapter_1"/>
+    <itemref idref="chapter_2"/>
+    <itemref idref="chapter_3"/>
+    <itemref idref="chapter_4"/>
+    <itemref idref="chapter_5"/>
+    <itemref idref="impressum"/>
+  </spine>
+  <guide>
+    <reference href="Text/cover.xhtml" title="Cover" type="cover"/>
+    <reference href="Text/nav.xhtml" title="Inhaltsverzeichnis" type="toc"/>
+    <reference href="Text/aequilibrium.xhtml#toc_marker-0" title="AEQUILIBRIUM" type="text"/>
+    <reference href="Text/prolog.xhtml#toc_marker-1" title="PROLOG" type="text"/>
+    <reference href="Text/eins.xhtml#toc_marker-2" title="EINS" type="text"/>
+    <reference href="Text/zwei.xhtml#toc_marker-3" title="ZWEI" type="text"/>
+    <reference href="Text/drei.xhtml#toc_marker-4" title="DREI" type="text"/>
+    <reference href="Text/vier.xhtml#toc_marker-5" title="VIER" type="text"/>
+    <reference href="Text/impressum.xhtml" title="Impressum" type="copyright-page"/>
+  </guide>
+</package>

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@media 	only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1), 
+		only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2), 
+		only screen and (device-height: 480px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2), 
+		only screen and (device-height: 568px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2)
+
+{
+/* BoD Standard CSS, Flowable Books, Version 2.0, iOs Specification */
+
+/* This section is for for testing purposes only */
+
+p.target_device {
+font-size: 0.8em;
+font-style: italic;
+font-weight: bold;
+color: #00ff00;
+text-align: center;
+}
+
+p.color_code
+{
+color: #00ff00;
+}
+
+p.target_device:after{
+content:"This eBook is running on an iOS tablet device."
+}
+
+span.bod_standard
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+span.rmsdk
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+span.ios
+{
+font-weight: bold;
+text-decoration: none;
+}
+
+
+span.kf8
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+
+span.ios_drpcapimg
+{
+vertical-align: text-top;
+float: left;
+margin-top: 0.4em;
+margin-right: -1.5em;
+
+}
+
+/* Drop Cap classes */
+span.dropcap
+{
+font-weight:bold;
+font-size: 2.8em;
+float: left;
+line-height:0.99em;
+margin-bottom:-0.25em;
+margin-top:-0.0em;
+margin-right: 0.025em;
+color:#00ff00;
+}
+/* Images as Drop Caps */
+img.dropcap_image {
+	float: left;
+	line-height: 1em;
+	margin: 0 1em 0 0;
+	height: 4em;
+	width: 4em;
+}
+
+/* Classes for tables and footnotes on different devices via media query */
+
+div.tablequery
+{
+display:inline-block;
+}
+
+img.tablequery
+{
+display:none;
+}
+
+p.tablequery_img
+{
+display:none;
+}
+
+p.tablequery_html
+{
+display:inline-block;
+}
+
+
+/* BoD Standard CSS, Flowable Books, Version 2.0, iPhone 4+5 Specification */
+
+@media only screen and (min-device-height: 480px) and (max-device-height: 568px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2)
+
+{
+
+p.target_device:after{
+content:"This eBook is running on an iOS phone."
+}
+
+}
+
+}

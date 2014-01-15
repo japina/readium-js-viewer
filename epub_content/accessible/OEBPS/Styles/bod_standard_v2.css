@@ -1,0 +1,607 @@
+/* BoD Standard CSS, Flowable Books, Version 2.0 */
+
+/* Character and Font definitions */
+@charset "UTF-8";
+
+@font-face {
+  font-family: "MetaProBook";
+  src: url(../Fonts/MetaPro-Book.otf);
+}
+
+@font-face {
+  font-family: "MetaProBold";
+  src: url(../Fonts/MetaPro-Bold.otf);
+}
+
+@font-face {
+  font-family: "MetaProItalic";
+  src: url(../Fonts/MetaPro-BookIta.otf);
+}
+
+@font-face {
+  font-family: "MetaProBoldItalic";
+  src: url(../Fonts/MetaPro-BoldIta.otf);
+}
+
+.meta {
+font-family: "MetaProBook";
+}
+
+.meta_bold {
+font-family: "MetaProBold";
+}
+
+.meta_italic {
+font-family: "MetaProItalic";
+}
+
+.meta_bolditalic {
+font-family: "MetaProBoldItalic";
+}
+
+/* This section is for for testing purposes only */
+
+p.target_device {
+font-size: 0.8em;
+font-style: italic;
+font-weight: bold;
+color: #ff0000;
+text-align: center;
+}
+
+p.color_code
+{
+color: #ff0000;
+}
+
+p.target_device:after{
+content:"This eBook is not running on a specified device."
+}
+
+span.bod_standard
+{
+font-weight: bold;
+text-decoration: none;
+}
+
+span.rmsdk
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+span.ios
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+
+span.kf8
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+/* Top Level Style Definitions ***********************************************************************************************************/
+
+body
+
+/* Book Level Style Definitions *********************************************************************************************************/
+
+/* Copyright page *************************************************************/
+
+ .cpytxt
+{
+font-size:0.8em;
+margin-top:1.5em;
+text-align:left;
+}
+
+/* Table of Contents **********************************************************/
+
+/* simple paragraphs **************************************/
+p.toc
+{
+text-align:left;
+}
+ 
+/* simple ordered and unordered lists *********************/
+ul.toc
+{
+text-align:left;
+}
+
+ol.toc
+{
+text-align:left;
+}
+
+ul.disc
+{
+list-style-type: disc;
+}
+
+ul.circle
+{
+list-style-type: circle;
+}
+
+ul.square
+{
+list-style-type: square;
+}
+
+ol.low_char_roman
+{
+list-style-type: lower-roman;
+}
+
+ol.upp_char_roman
+{
+list-style-type: upper-roman;
+}
+
+ol.low_char_latin
+{
+list-style-type: lower-latin;
+}
+
+ol.upp_char_latin
+{
+list-style-type: upper-latin;
+}
+
+.nostyle
+{
+list-style-type: none;
+}
+
+
+/* complex hierarchies for toc creation ************************************/
+
+.toc-part 
+{
+margin-top:1em;
+padding-left:3.2em;
+margin-bottom:0.8em;
+text-indent:-3.2em; 
+}
+
+.toc-chapter 
+{
+font-size:1em;
+text-align:left; 
+}
+
+
+.toc-chapter.level1 
+{
+margin-top:1em;
+}
+
+.toc-chapter.level2 
+{
+margin-top:0.75em;
+}
+
+.toc-chapter.level3 
+{
+margin-top:0.5em;
+}
+
+.toc-chapter.level4 
+{
+margin-top:0.25em;
+}
+
+
+
+
+/* Basic Chapter Level Style Definitions *************************************************************/
+
+
+/* Headings *******************************************************************/
+/* Headings should be left aligned or centered, they do not have to contain a back link ******/
+
+h1, h2, h3, h4 , h5, h6 
+{ 
+  	-webkit-hyphens: none;
+  	hyphens: none;
+  	adobe-hyphenate: none;
+  	text-align:left;
+	page-break-after: avoid;
+ }
+
+/* Paragraph Styles *****************************************************/
+
+p
+{
+widows:2;
+orphans:2;
+}
+
+.normal /*  base font size should be 1 em*/
+{
+font-size:1em;
+text-align: justify;
+}
+
+
+.center
+{
+text-align:center;
+}
+
+.left
+{
+text-align:left;
+}
+
+.right
+{
+text-align:right;
+}
+
+ .justify
+{
+text-align:justify;
+}
+
+.quote  /* match PDF Style*/
+{
+margin-top:1em;
+margin-left:1em;
+margin-bottom:1em;
+font-style:italic;
+font-size:0.8em;
+text-align:right;
+} 
+
+.dedication /* match PDF Style*/
+{
+margin-top:1.0em;
+margin-bottom:1.0em;
+text-align:center;
+}
+
+.caption /* match PDF Style*/
+{
+font-size:0.8em;
+margin-top:0.5em;
+margin-bottom:1em;
+}
+
+.source /* match PDF Style*/
+{
+font-size:0.8em;
+margin-top:0.5em;
+margin-bottom:1em;
+font-weight:bold;
+font-style:italic;
+text-align:right;
+}
+
+.bibliography /* match PDF Style*/
+{
+margin-top:0.4em;
+margin-bottom:0em;
+padding-left:1.5em;
+margin-left:0em;
+text-indent:-1.5em;
+text-align:left;
+}
+
+.index_letter /* match PDF Style*/
+{
+font-size:1em;
+margin-top:1.0em;
+margin-bottom:1.0em;
+margin-left:0em;
+text-indent:0em;
+text-align:left;
+}
+
+.index_entry /* match PDF Style*/
+{
+font-size:1em;
+margin-top:0em;
+margin-bottom:0em;
+margin-left:0.5em;
+text-align:left;
+}
+
+/* Complex Chapter Level Style Definitions *************************************************************/
+
+/* Images *****************************************************/
+
+.image  /*div to enclose img tags*/
+{
+margin-top:1em;
+margin-bottom:1em;
+text-align: center;
+}
+
+
+img
+{
+max-width:100%;
+max-height:100%;
+display:inline-block;
+}
+
+div.group /*div to keep elements together, e.g. quote and quote author, etc*/
+{
+page-break-inside: avoid;
+}
+
+div.group_img /*div to keep images and captions together*/
+{
+page-break-inside: avoid;
+height: 95%;
+}
+
+.pagebreak /*class to create page break before element*/
+{
+page-break-before: always;
+}
+
+/*Caption in small size */
+.caption_small
+{
+font-size:0.6em;
+margin-top:0.5em;
+margin-bottom:0.5em;
+}
+
+/* Tables *****************************************************/
+
+table
+{
+border-collapse: collapse;
+margin-top:1em;
+margin-bottom:0em;
+width: 100%;
+}
+
+td
+{
+-webkit-hyphens: auto !important; adobe-hyphenate: auto; hyphens: auto;
+font-size: 0.8em;
+}
+
+
+div.table
+{
+display:inline-block;
+}
+
+.small_table
+{
+display:inline-block;
+}
+
+.table1
+{
+border: solid 1px #000000;
+background-color: #FFFFFF;
+}
+.th1
+{ 
+background-color: #d2d2d2;
+padding-right: 0.5em;
+padding-top: 0.5em;
+padding-left: 0.5em;
+padding-bottom:0.5em;
+text-align: left;
+vertical-align: top;
+border: solid 1px #000000;
+}
+
+.td_left
+{
+padding-right: 0.5em;
+padding-top: 0.5em;
+padding-left: 0.5em;
+padding-bottom:0.5em;
+text-align: left;
+vertical-align: top;
+border: solid 1px #000000;
+}
+
+.td_right
+{
+padding-right: 0.5em;
+padding-top: 0.5em;
+padding-left: 0.5em;
+padding-bottom:0.5em;
+text-align: right;
+vertical-align: top;
+border: solid 1px #000000;
+}
+
+.td_center
+{
+padding-right: 0.5em;
+padding-top: 0.5em;
+padding-left: 0.5em;
+padding-bottom:0.5em;
+text-align: center;
+vertical-align: top;
+border: solid 1px #000000;
+}
+
+/* Classes for tables and footnotes on different devices via media query */
+
+div.tablequery
+{
+display:inline-block;
+}
+
+img.tablequery
+{
+display:none;
+}
+
+p.tablequery_img
+{
+display:none;
+}
+
+p.tablequery_html
+{
+display:inline-block;
+}
+
+/* Boxes, lines and pullquotes *****************************************************/
+
+.box
+{
+border: solid 1.5px #000000;
+margin-top: 1.00em;
+margin-bottom: 1.00em;
+padding-right: 0.5em;
+padding-top: 0.5em;
+padding-left: 0.5em;
+width: 90%; /* reduced width to 90% for display on ipad ( between 91-100% the right border is cut off) */
+page-break-inside: avoid;
+}
+
+.box1
+{
+text-indent: 0em;
+margin-top:2em;
+border:3px dotted;
+padding:1em;
+margin-bottom:2em;
+}
+
+hr.example
+{
+border: solid 1.5px #f1f6fc;
+}
+
+.line
+{
+border-top:1px solid #000000;
+}
+
+div.pullquote 
+{
+display: inline-block;
+float: right;
+margin-top:15px;
+margin-bottom:10px;
+margin-left:10px;
+padding: 5px 5px;
+width: 200px;
+border-top: 3px double #505050;
+border-bottom: 3px double #505050;
+}
+
+.pull
+
+{
+	font-size:0.8em;
+	text-align:left;
+}
+
+/* Lists *****************************************************/
+
+ .number
+{
+font-size:small;
+margin-top:1.5em;
+margin-bottom:0em;
+margin-left:1.05em;
+text-indent:-1.05em;
+text-align:left;
+}
+ .number1
+{
+font-size:small;
+margin-left:2.3em;
+text-indent:-0.95em;
+text-align:left;
+} 
+.numbera
+{
+font-size:small;
+margin-left:4em;
+text-indent:-0.95em;
+text-align:left;
+} 
+
+ul.ext_img
+{
+list-style-image:url(../Images/box.jpg);
+}
+
+/* Footnotes *****************************************************/
+
+.footnote
+{
+font-size:0.6em;
+margin-top:0.1em;
+margin-bottom:0em;
+margin-left:1.5em;
+text-indent:-1.4em;
+text-align:left;
+}
+
+
+/* Character Styles *****************************************************/
+
+/* Coloured characters */
+span.red
+{
+color: #ff0000;
+}
+
+.hyphens
+{
+-webkit-hyphens: auto !important; adobe-hyphenate: auto; hyphens: auto;
+text-align:justify;
+}
+
+/* Drop Cap classes */
+span.dropcap
+{
+font-weight:bold;
+font-size: 2.8em;
+float: left;
+line-height:0.99em;
+margin-bottom:-0.25em;
+margin-right: 0.025em;
+color:#0000ff;
+}
+
+/* Images as Drop Caps */
+img.dropcap_image {
+	float: left;
+	line-height: 1em;
+	margin: 0 1em 0 0;
+	height: 4em;
+	width: 4em;
+}
+
+/* Small Caps*/
+
+span.smallcaps
+{
+font-variant:small-caps;
+}
+
+
+/* Line Styles *********************************************************/
+
+.l1
+{
+width: 50%; 
+noshade: noshade;
+}
+
+
+
+
+

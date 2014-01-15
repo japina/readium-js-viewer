@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="p9783123456789" version="3.0" prefix="rendition: http://www.ipdf.org/vocab/rendition/#"> <!-- edited for epub3 upgrade -->
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier id="p9783123456789">URN:ISBN: 978-3-1234-5678-9</dc:identifier>
+    <dc:source>URN:ISBN: 978-3-1234-5678-9</dc:source>
+    <dc:publisher>Books on Demand</dc:publisher>
+    <dc:language>de</dc:language>
+    <dc:type>Text</dc:type>
+    <dc:title>BoD - Best Practice Guide</dc:title>
+    <dc:format>XX pages</dc:format>
+    <dc:rights>Alle Rechte vorbehalten</dc:rights>
+    <meta property="dcterms:modified">2014-01-13T10:26:00Z</meta> <!-- edited for epub3 upgrade -->
+    <meta name="cover" content="cover-image" />
+  </metadata>
+  <manifest>
+    <item href="Text/cover.xhtml" id="cover" media-type="application/xhtml+xml" />
+    <item href="Text/title.xhtml" id="title" media-type="application/xhtml+xml" />
+    <item href="Text/contents.xhtml" id="contents" media-type="application/xhtml+xml" properties="nav" /> <!-- edited for epub3 upgrade -->
+    <item href="Text/chapter01.xhtml" id="chapter01" media-type="application/xhtml+xml" />
+    <item href="Text/chapter02.xhtml" id="chapter02" media-type="application/xhtml+xml" />
+    <item href="Text/chapter03.xhtml" id="chapter03" media-type="application/xhtml+xml" />
+    <item href="Text/chapter04.xhtml" id="chapter04" media-type="application/xhtml+xml" />
+    <item href="Text/chapter05.xhtml" id="chapter05" media-type="application/xhtml+xml" />
+    <item href="Text/copyright.xhtml" id="copyright" media-type="application/xhtml+xml" />
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+    <item href="Styles/bod_standard_v2.css" id="bod_standard_v2.css" media-type="text/css" />
+    <item href="Styles/kf8.css" id="kf8.css" media-type="text/css" />
+    <item href="Misc/page-template.xpgt" id="pt" media-type="application/vnd.adobe-page-template+xml" />
+    <item href="Images/char_table_1.jpg" id="chartable1" media-type="image/jpeg" />
+    <item href="Images/char_table_2.jpg" id="chartable2" media-type="image/jpeg" />
+    <item href="Images/char_table_3.jpg" id="chartable3" media-type="image/jpeg" />
+    <item href="Images/char_table_4.jpg" id="chartable4" media-type="image/jpeg" />
+    <item href="Images/drop-d.jpg" id="drop-d.jpg" media-type="image/jpeg" />
+    <item href="Images/f0017-01.jpg" id="f0017-01.jpg" media-type="image/jpeg" />
+    <item href="Images/f0033-01.jpg" id="f0033-01.jpg" media-type="image/jpeg" />
+    <item href="Styles/ios.css" id="ios.css" media-type="text/css" />
+    <item href="Images/box.jpg" id="box.jpg" media-type="image/jpeg" />
+    <item href="Images/img_p15.jpg" id="img_p15.jpg" media-type="image/jpeg" />
+    <item href="Images/img_p15a.jpg" id="img_p15a.jpg" media-type="image/jpeg" />
+    <item href="Images/cover.jpg" id="cover-image" media-type="image/jpeg" />
+    <item href="Images/translation_table_a.jpg" id="translation_table_a.jpg" media-type="image/jpeg" />
+    <item href="Images/translation_table_b.jpg" id="translation_table_b.jpg" media-type="image/jpeg" />
+    <item href="Styles/rmsdk.css" id="rmsdk.css" media-type="text/css" />
+    <item href="Fonts/MetaPro-Bold.otf" id="MetaPro-Bold.otf" media-type="application/vnd.ms-opentype" />
+    <item href="Fonts/MetaPro-BoldIta.otf" id="MetaPro-BoldIta.otf" media-type="application/vnd.ms-opentype" />
+    <item href="Fonts/MetaPro-Book.otf" id="MetaPro-Book.otf" media-type="application/vnd.ms-opentype" />
+    <item href="Fonts/MetaPro-BookIta.otf" id="MetaPro-BookIta.otf" media-type="application/vnd.ms-opentype" />
+    <item href="Images/small_img.jpg" id="small_img.jpg" media-type="image/jpeg" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover" linear="yes" />
+    <itemref idref="title" linear="yes" />
+    <itemref idref="contents" linear="yes" />
+    <itemref idref="chapter01" linear="yes" />
+    <itemref idref="chapter02" linear="yes" />
+    <itemref idref="chapter03" linear="yes" />
+    <itemref idref="chapter04" linear="yes" />
+    <itemref idref="chapter05" linear="yes" />
+    <itemref idref="copyright" linear="yes" />
+  </spine>
+  <guide>
+    <reference href="Text/cover.xhtml" title="Cover" type="cover" />
+    <reference href="Text/contents.xhtml" title="Contents" type="toc" />
+    <reference href="Text/chapter01.xhtml#chapter01" title="1. Introduction" type="text" />
+    <reference href="Text/copyright.xhtml" title="Copyright" type="copyright" />
+  </guide>
+</package>

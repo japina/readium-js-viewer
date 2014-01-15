@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx
+  PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+   <head>
+      <!--The following four metadata items are required for all
+            NCX documents, including those conforming to the relaxed
+            constraints of OPS 2.0-->
+      <meta name="dtb:uid" content="155E7C29-91BF-1014-9301-D7FF6A14E449"/>
+      <meta name="epub-creator" content="epubBooks (www.epubbooks.com)"/>
+      <meta name="dtb:depth" content="1"/>
+      <meta name="dtb:totalPageCount" content="0"/>
+      <meta name="dtb:maxPageNumber" content="0"/>
+   </head>
+   <docTitle>
+      <text>Oliver Twist</text>
+   </docTitle>
+   <docAuthor>
+      <text>Charles Dickens</text>
+   </docAuthor>
+   <navMap>
+      <navPoint id="navpoint-1" playOrder="1">
+         <navLabel>
+            <text>Title Page</text>
+         </navLabel>
+         <content src="title.html"/>
+      </navPoint>
+      <navPoint id="navpoint-2" playOrder="2">
+         <navLabel>
+            <text>epubBooks Information</text>
+         </navLabel>
+         <content src="epubbooksinfo.html"/>
+      </navPoint>
+      <navPoint id="navpoint-3" playOrder="3">
+         <navLabel>
+            <text>CHAPTER I</text>
+         </navLabel>
+         <content src="chapter-001.html"/>
+      </navPoint>
+      <navPoint id="navpoint-4" playOrder="4">
+         <navLabel>
+            <text>CHAPTER II</text>
+         </navLabel>
+         <content src="chapter-002.html"/>
+      </navPoint>
+      <navPoint id="navpoint-5" playOrder="5">
+         <navLabel>
+            <text>CHAPTER III</text>
+         </navLabel>
+         <content src="chapter-003.html"/>
+      </navPoint>
+      <navPoint id="navpoint-6" playOrder="6">
+         <navLabel>
+            <text>CHAPTER IV</text>
+         </navLabel>
+         <content src="chapter-004.html"/>
+      </navPoint>
+      <navPoint id="navpoint-7" playOrder="7">
+         <navLabel>
+            <text>CHAPTER V</text>
+         </navLabel>
+         <content src="chapter-005.html"/>
+      </navPoint>
+      <navPoint id="navpoint-8" playOrder="8">
+         <navLabel>
+            <text>CHAPTER VI</text>
+         </navLabel>
+         <content src="chapter-006.html"/>
+      </navPoint>
+      <navPoint id="navpoint-9" playOrder="9">
+         <navLabel>
+            <text>CHAPTER VII</text>
+         </navLabel>
+         <content src="chapter-007.html"/>
+      </navPoint>
+      <navPoint id="navpoint-10" playOrder="10">
+         <navLabel>
+            <text>CHAPTER VIII</text>
+         </navLabel>
+         <content src="chapter-008.html"/>
+      </navPoint>
+      <navPoint id="navpoint-11" playOrder="11">
+         <navLabel>
+            <text>CHAPTER IX</text>
+         </navLabel>
+         <content src="chapter-009.html"/>
+      </navPoint>
+      <navPoint id="navpoint-12" playOrder="12">
+         <navLabel>
+            <text>CHAPTER X</text>
+         </navLabel>
+         <content src="chapter-010.html"/>
+      </navPoint>
+      <navPoint id="navpoint-13" playOrder="13">
+         <navLabel>
+            <text>CHAPTER XI</text>
+         </navLabel>
+         <content src="chapter-011.html"/>
+      </navPoint>
+      <navPoint id="navpoint-14" playOrder="14">
+         <navLabel>
+            <text>CHAPTER XII</text>
+         </navLabel>
+         <content src="chapter-012.html"/>
+      </navPoint>
+      <navPoint id="navpoint-15" playOrder="15">
+         <navLabel>
+            <text>CHAPTER XIII</text>
+         </navLabel>
+         <content src="chapter-013.html"/>
+      </navPoint>
+      <navPoint id="navpoint-16" playOrder="16">
+         <navLabel>
+            <text>CHAPTER XIV</text>
+         </navLabel>
+         <content src="chapter-014.html"/>
+      </navPoint>
+      <navPoint id="navpoint-17" playOrder="17">
+         <navLabel>
+            <text>CHAPTER XV</text>
+         </navLabel>
+         <content src="chapter-015.html"/>
+      </navPoint>
+      <navPoint id="navpoint-18" playOrder="18">
+         <navLabel>
+            <text>CHAPTER XVI</text>
+         </navLabel>
+         <content src="chapter-016.html"/>
+      </navPoint>
+      <navPoint id="navpoint-19" playOrder="19">
+         <navLabel>
+            <text>CHAPTER XVII</text>
+         </navLabel>
+         <content src="chapter-017.html"/>
+      </navPoint>
+      <navPoint id="navpoint-20" playOrder="20">
+         <navLabel>
+            <text>CHAPTER XVIII</text>
+         </navLabel>
+         <content src="chapter-018.html"/>
+      </navPoint>
+      <navPoint id="navpoint-21" playOrder="21">
+         <navLabel>
+            <text>CHAPTER XIX</text>
+         </navLabel>
+         <content src="chapter-019.html"/>
+      </navPoint>
+      <navPoint id="navpoint-22" playOrder="22">
+         <navLabel>
+            <text>CHAPTER XX</text>
+         </navLabel>
+         <content src="chapter-020.html"/>
+      </navPoint>
+      <navPoint id="navpoint-23" playOrder="23">
+         <navLabel>
+            <text>CHAPTER XXI</text>
+         </navLabel>
+         <content src="chapter-021.html"/>
+      </navPoint>
+      <navPoint id="navpoint-24" playOrder="24">
+         <navLabel>
+            <text>CHAPTER XXII</text>
+         </navLabel>
+         <content src="chapter-022.html"/>
+      </navPoint>
+      <navPoint id="navpoint-25" playOrder="25">
+         <navLabel>
+            <text>CHAPTER XXIII</text>
+         </navLabel>
+         <content src="chapter-023.html"/>
+      </navPoint>
+      <navPoint id="navpoint-26" playOrder="26">
+         <navLabel>
+            <text>CHAPTER XXIV</text>
+         </navLabel>
+         <content src="chapter-024.html"/>
+      </navPoint>
+      <navPoint id="navpoint-27" playOrder="27">
+         <navLabel>
+            <text>CHAPTER XXV</text>
+         </navLabel>
+         <content src="chapter-025.html"/>
+      </navPoint>
+      <navPoint id="navpoint-28" playOrder="28">
+         <navLabel>
+            <text>CHAPTER XXVI</text>
+         </navLabel>
+         <content src="chapter-026.html"/>
+      </navPoint>
+      <navPoint id="navpoint-29" playOrder="29">
+         <navLabel>
+            <text>CHAPTER XXVII</text>
+         </navLabel>
+         <content src="chapter-027.html"/>
+      </navPoint>
+      <navPoint id="navpoint-30" playOrder="30">
+         <navLabel>
+            <text>CHAPTER XXVIII</text>
+         </navLabel>
+         <content src="chapter-028.html"/>
+      </navPoint>
+      <navPoint id="navpoint-31" playOrder="31">
+         <navLabel>
+            <text>CHAPTER XXIX</text>
+         </navLabel>
+         <content src="chapter-029.html"/>
+      </navPoint>
+      <navPoint id="navpoint-32" playOrder="32">
+         <navLabel>
+            <text>CHAPTER XXX</text>
+         </navLabel>
+         <content src="chapter-030.html"/>
+      </navPoint>
+      <navPoint id="navpoint-33" playOrder="33">
+         <navLabel>
+            <text>CHAPTER XXXI</text>
+         </navLabel>
+         <content src="chapter-031.html"/>
+      </navPoint>
+      <navPoint id="navpoint-34" playOrder="34">
+         <navLabel>
+            <text>CHAPTER XXXII</text>
+         </navLabel>
+         <content src="chapter-032.html"/>
+      </navPoint>
+      <navPoint id="navpoint-35" playOrder="35">
+         <navLabel>
+            <text>CHAPTER XXXIII</text>
+         </navLabel>
+         <content src="chapter-033.html"/>
+      </navPoint>
+      <navPoint id="navpoint-36" playOrder="36">
+         <navLabel>
+            <text>CHAPTER XXXIV</text>
+         </navLabel>
+         <content src="chapter-034.html"/>
+      </navPoint>
+      <navPoint id="navpoint-37" playOrder="37">
+         <navLabel>
+            <text>CHAPTER XXXV</text>
+         </navLabel>
+         <content src="chapter-035.html"/>
+      </navPoint>
+      <navPoint id="navpoint-38" playOrder="38">
+         <navLabel>
+            <text>CHAPTER XXXVI</text>
+         </navLabel>
+         <content src="chapter-036.html"/>
+      </navPoint>
+      <navPoint id="navpoint-39" playOrder="39">
+         <navLabel>
+            <text>CHAPTER XXXVII</text>
+         </navLabel>
+         <content src="chapter-037.html"/>
+      </navPoint>
+      <navPoint id="navpoint-40" playOrder="40">
+         <navLabel>
+            <text>CHAPTER XXXVIII</text>
+         </navLabel>
+         <content src="chapter-038.html"/>
+      </navPoint>
+      <navPoint id="navpoint-41" playOrder="41">
+         <navLabel>
+            <text>CHAPTER XXXIX</text>
+         </navLabel>
+         <content src="chapter-039.html"/>
+      </navPoint>
+      <navPoint id="navpoint-42" playOrder="42">
+         <navLabel>
+            <text>CHAPTER XL</text>
+         </navLabel>
+         <content src="chapter-040.html"/>
+      </navPoint>
+      <navPoint id="navpoint-43" playOrder="43">
+         <navLabel>
+            <text>CHAPTER XLI</text>
+         </navLabel>
+         <content src="chapter-041.html"/>
+      </navPoint>
+      <navPoint id="navpoint-44" playOrder="44">
+         <navLabel>
+            <text>CHAPTER XLII</text>
+         </navLabel>
+         <content src="chapter-042.html"/>
+      </navPoint>
+      <navPoint id="navpoint-45" playOrder="45">
+         <navLabel>
+            <text>CHAPTER XLIII</text>
+         </navLabel>
+         <content src="chapter-043.html"/>
+      </navPoint>
+      <navPoint id="navpoint-46" playOrder="46">
+         <navLabel>
+            <text>CHAPTER XLIV</text>
+         </navLabel>
+         <content src="chapter-044.html"/>
+      </navPoint>
+      <navPoint id="navpoint-47" playOrder="47">
+         <navLabel>
+            <text>CHAPTER XLV</text>
+         </navLabel>
+         <content src="chapter-045.html"/>
+      </navPoint>
+      <navPoint id="navpoint-48" playOrder="48">
+         <navLabel>
+            <text>CHAPTER XLVI</text>
+         </navLabel>
+         <content src="chapter-046.html"/>
+      </navPoint>
+      <navPoint id="navpoint-49" playOrder="49">
+         <navLabel>
+            <text>CHAPTER XLVII</text>
+         </navLabel>
+         <content src="chapter-047.html"/>
+      </navPoint>
+      <navPoint id="navpoint-50" playOrder="50">
+         <navLabel>
+            <text>CHAPTER XLVIII</text>
+         </navLabel>
+         <content src="chapter-048.html"/>
+      </navPoint>
+      <navPoint id="navpoint-51" playOrder="51">
+         <navLabel>
+            <text>CHAPTER XLIX</text>
+         </navLabel>
+         <content src="chapter-049.html"/>
+      </navPoint>
+      <navPoint id="navpoint-52" playOrder="52">
+         <navLabel>
+            <text>CHAPTER L</text>
+         </navLabel>
+         <content src="chapter-050.html"/>
+      </navPoint>
+      <navPoint id="navpoint-53" playOrder="53">
+         <navLabel>
+            <text>CHAPTER LI</text>
+         </navLabel>
+         <content src="chapter-051.html"/>
+      </navPoint>
+      <navPoint id="navpoint-54" playOrder="54">
+         <navLabel>
+            <text>CHAPTER LII</text>
+         </navLabel>
+         <content src="chapter-052.html"/>
+      </navPoint>
+      <navPoint id="navpoint-55" playOrder="55">
+         <navLabel>
+            <text>CHAPTER LIII</text>
+         </navLabel>
+         <content src="chapter-053.html"/>
+      </navPoint>
+      <navPoint id="navpoint-56" playOrder="56">
+         <navLabel>
+            <text>Footnotes</text>
+         </navLabel>
+         <content src="footnotes.html"/>
+      </navPoint>
+   </navMap>
+</ncx>

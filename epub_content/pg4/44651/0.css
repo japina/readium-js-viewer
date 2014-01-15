@@ -1,0 +1,141 @@
+@charset "utf-8";
+/**/
+body {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+h1 {
+    text-align: center;
+    clear: both;
+    margin-top: 6em
+    }
+h2 {
+    text-align: center;
+    clear: both;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    font-size: 1.2em
+    }
+.chap1 {
+    margin-top: 1em
+    }
+p {
+    margin-top: 0.75em;
+    text-align: left;
+    margin-bottom: 0.75em
+    }
+.pagenum {
+    font-size: smaller;
+    text-align: right;
+    font-style: normal
+    }
+hr {
+    width: 33%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 33%;
+    margin-right: auto;
+    clear: both
+    }
+hr.l15 {
+    width: 15%;
+    margin-left: 42%
+    }
+hr.l30 {
+    width: 30%;
+    margin-left: 35%
+    }
+hr.l05 {
+    width: 5%;
+    margin-left: 47%
+    }
+.center {
+    text-align: center
+    }
+.smcap {
+    font-variant: small-caps
+    }
+.caption {
+    font-weight: bold;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    margin-bottom: 2em
+    }
+ul.none {
+    list-style-type: none
+    }
+li {
+    margin-left: 1em;
+    text-indent: -1em
+    }
+.figcenter {
+    margin: auto;
+    text-align: center
+    }
+.figright {
+    clear: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 0;
+    padding: 0;
+    text-align: center
+    }
+p.hanging {
+    margin-left: 1em;
+    text-indent: -1em
+    }
+.ad {
+    margin-left: 20%;
+    margin-right: 20%
+    }
+.p2 {
+    margin-top: 2em
+    }
+.p4 {
+    margin-top: 4em
+    }
+.p6 {
+    margin-top: 6em
+    }
+.b20 {
+    font-size: 2em
+    }
+.b15 {
+    font-size: 1.5em
+    }
+.b13 {
+    font-size: 1.3em
+    }
+.b12 {
+    font-size: 1.2em
+    }
+.s08 {
+    font-size: 0.8em
+    }
+table {
+    margin-left: auto;
+    margin-right: auto;
+    empty-cells: show
+    }
+td {
+    padding-left: 1em;
+    padding-right: 1em
+    }
+.tdr {
+    text-align: right
+    }
+.tnbox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8em;
+    margin-top: auto;
+    text-align: center;
+    border: 1px solid;
+    padding: 1em;
+    color: black;
+    background-color: #f6f2f2;
+    width: 25em
+    }
+/**/

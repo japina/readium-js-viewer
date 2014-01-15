@@ -1,0 +1,150 @@
+/* BoD Standard CSS, Flowable Books, Version 2.0, KF8 Specification */
+
+@charset "UTF-8";
+
+
+@media amzn-kf8
+
+{
+
+/* This section is for for testing purposes only */
+
+p.target_device {
+font-size: 0.8em;
+font-style: italic;
+font-weight: bold;
+color: #000000;
+text-align: center;
+}
+
+p.color_code
+{
+color: #000000;
+}
+
+p.target_device:after{
+content:"This eBook is running on a kindle kf8 device."
+}
+
+span.bod_standard
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+span.rmsdk
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+span.ios
+{
+font-weight: normal;
+text-decoration: line-through;
+}
+
+
+span.kf8
+{
+font-weight: bold;
+text-decoration: none;
+}
+
+/* styles */
+
+
+.normal
+{
+font-size:1em;
+}
+
+ol
+{
+text-align:left;
+}
+
+ul
+{
+text-align:left;
+}
+
+span.dropcap
+{
+font-weight:normal;
+font-size:320%;
+float:left;
+margin-top:-0.3225em;
+margin-bottom:-0.3445em;
+color:#00ff00;
+}
+
+/* Classes for tables and footnotes on different devices via media query */
+
+div.tablequery
+{
+display:inline-block;
+width:90%;
+}
+
+img.tablequery
+{
+display:none;
+}
+
+p.tablequery_img
+{
+display:none;
+}
+
+p.tablequery_html
+{
+display:inline-block;
+}
+
+/* AMAZON INDENTATION TEST */
+/*top-space 0 with justify alignment*/
+.justify 
+{
+font-size:0.8em;
+text-indent:0em;
+margin-top:0em;
+margin-bottom:0em;
+text-align:justify;
+}
+/*top-space 0.3 with justify alignment*/
+.justifyp3
+{
+font-size:0.8em;
+text-indent:0em;
+margin-top:0.3em;
+margin-bottom:0em;
+text-align:justify;
+}
+/*top-space 0.5 with justify alignment*/
+.justifyp5 
+{
+font-size:0.8em;
+text-indent:0em;
+margin-top:0.5em;
+margin-bottom:0em;
+text-align:justify;
+}
+/*top-space 1 with justify alignment*/
+.justify1 {
+font-size:0.8em;
+text-indent:0em;
+margin-top:1em;
+margin-bottom:0em;
+text-align:justify;
+}
+/*top-space 2 with justify alignment*/
+.justify2 {
+font-size:0.8em;
+text-indent:0em;
+margin-top:2em;
+margin-bottom:0em;
+text-align:justify;
+}
+
+}

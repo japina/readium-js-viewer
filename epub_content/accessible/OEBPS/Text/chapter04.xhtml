@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!-- DOCTYPE deleted for epub3 upgrade -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<head>
+  <title>BoD - Best Practice Guide</title>
+  <link href="../Styles/bod_standard_v2.css" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/rmsdk.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/kf8.css" media="amzn-kf8" rel="stylesheet" type="text/css"/>
+  <link href="../Styles/ios.css" media="only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1), only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2), only screen and (device-height: 480px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2), only screen and (device-height: 568px) and (device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="stylesheet" type="text/css"/> 
+</head>
+
+<body style="">
+  <h1 id="chapter04">4. Formatting Examples</h1>
+
+  <h2 id="chapter04a">4.1 Text</h2>
+
+  <h3 id="chapter04a1">4.1.1 Headers</h3>
+
+  <p class="normal">Headers must to be tagged using h1-h6 tags, not p tags. Styles should match the PDF with the following exception: Headers are not to be aligned justified and no top or bottom margins in excess of 3 em are to be set. If in the source PDF different top or bottom margins are applied to the same header level to ensure proper page breaks before or after, these should be merged into one style.</p>
+
+  <h3 id="chapter04a2">4.1.2 Plain Text</h3>
+
+  <p class="normal">According to the <a id="index01"/>Amazon Publisher Guide, plain text should not be forced justified or left-aligned. To honor this requirement, the p class "normal" has no values in the kf8.css.</p>
+
+  <h3 id="chapter04a3">4.1.3 Quotes, Mottos, Dedications</h3>
+
+  <p class="normal">Quotes, Mottos and Dedications should have an individual, recognizable class in CSS: class="motto" rather than "class="p15". Styles should match the PDF. If the source is named, text and author should be grouped in a div element</p>
+
+  <div class="group">
+    <p class="quote">“If I had asked people what they wanted, they would have said faster horses.”</p>
+
+    <p class="source">Henry Ford</p>
+  </div>
+
+  <h3 id="chapter04a4">4.1.4 Drop Caps and Small Caps</h3>
+
+  <p class="normal">Drop Caps need to be coded differently for Kindle, iOS and RMSDK devices. As a general rule, BoD styles defined in BoD CSS are to be used instead of matching the style to the title's source PDF. PDF matching for drop cap styles requires testing on multiple devices.</p>
+
+  <p class="normal"><span class="smallcaps">Small Caps</span> should be styled using a span with the class "small caps" which is defined in the standard CSS.</p>
+
+  <div class="group">
+    <hr class="example"/>
+
+    <h4 id="heading_id_2">Simple Drop Caps</h4>
+
+    <p class="normal"><span class="dropcap">B</span>eim ersten Morgengrauen verstummten die Geräusche der Nacht. Die Vögel im Wald erwachten und begrüßten den ersten Streifen Morgenlicht mit fröhlichem Gezwitscher. Ein Wanderfalke zog über den Tannen seinen Weg und das laute Rufen eines Eichelhähers warnte die Tiere vor dem Jäger. Die Eule, die das helle Tageslicht scheute, verbarg sich im Geäst einer Kiefer. Der Dachs, der die ganze Nacht über unterwegs gewesen und sich satt gefressen hatte, kroch zufrieden zurück in seinen Bau. Nur der Fuchs strich noch immer beutesuchend durchs Unterholz. [...]</p>
+
+    <p class="source">Source: Benjamin Schwalbenkind by Petra Koch, ISBN: 978-3-8423-1720-8</p>
+    <hr class="example"/>
+  </div>
+
+  <div class="group">
+    <hr class="example"/>
+
+    <h4 id="heading_id_3">Drop Cap Images</h4>
+
+    <p class="normal"><span class="ios_drpcapimg"><img alt="" class="dropcap_image" src="../Images/drop-d.jpg"/></span>ie frühe Neuzeit (15. bis 18. Jahrhundert) war in Europa auch die Zeit der Hexenverfolgungen und Hexenprozesse. Unter einer Hexe verstand man damals eine Frau (nur selten wurden auch Männer als Hexer verfolgt), die sich mit dem Teufel (incubus) eingelassen haben und seine Anhängerin geworden sein sollte. Ferner wurde den Angeklagten vorgeworfen, auf Besen oder Tieren zu fliegen (Hexenflug), Schadenszauber zu betreiben oder sich auf dem "Hexensabbat" sexuellen Ausschweifungen hinzugeben. All diese Vorwürfe ergaben sich aus kleinen, angeblichen Verdachtsmomenten, und wenn es zum Prozess kam, wurden die Angeklagten oft brutal zum Geständnis gefoltert und meist von der Inquisition der Kirche verurteilt. Der Hexenprozess gegen Katharina Kepler, der Mutter des Astronomen Johannes Kepler, ist einer der berühmtesten dieser Zeit. [...]</p>
+
+    <p class="source">Source: In einer Stadt vor unserer Zeit by Heike Wolter, ISBN 978-3-902647-82-5</p>
+    <hr class="example"/>
+  </div>
+
+  <h3 id="chapter04a5">4.1.5 Lists</h3>
+
+  <p class="normal">All lists must be coded using ol or ul tags, because this coding delivers the best results regarding alignment and cross-plattform compatability.</p>
+  <hr class="example"/>
+
+  <h4 id="heading_id_4">Example for a simple, unordered list with <a id="index02"/>bullet points</h4>
+
+  <ul class="disc">
+    <li>Geräte sollten das universelle gpx-Format verarbeiten können</li>
+
+    <li>Farbdisplay, dass auch bei Sonnenlicht gut ablesbar ist</li>
+
+    <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden</li>
+
+    <li>integrierter barometrischer Höhenmesser und Kompass</li>
+
+    <li>lange Batterielaufzeiten – mindestens 10 Stunden</li>
+
+    <li>stabile Fahrradhalterung</li>
+  </ul>
+
+  <p class="source">Source: TransAlp Roadbook 8 by Andreas Albrecht, ISBN: 978-3-8391-6104-3</p>
+  <hr class="example"/>
+
+  <h4 id="heading_id_5">Example for a Simple, Unordered List Using an Image</h4>
+
+  <ul class="ext_img">
+    <li>Geräte sollten das universelle gpx-Format verarbeiten können</li>
+
+    <li>Farbdisplay, dass auch bei Sonnenlicht gut ablesbar ist</li>
+
+    <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden</li>
+
+    <li>integrierter barometrischer Höhenmesser und Kompass</li>
+
+    <li>lange Batterielaufzeiten – mindestens 10 Stunden</li>
+
+    <li>stabile Fahrradhalterung</li>
+  </ul>
+
+  <p class="source">Source: TransAlp Roadbook 8 by Andreas Albrecht, ISBN: 978-3-8391-6104-3</p>
+  <hr class="example"/>
+
+  <h4 id="heading_id_6">Example for a Nested, Un-/ordered List</h4>
+
+  <ol>
+    <li>Geräte sollten das universelle gpx-Format verarbeiten können</li>
+
+    <li>Farbdisplay, dass auch bei Sonnenlicht gut ablesbar ist
+
+      <ul class="square">
+        <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden</li>
+
+        <li>integrierter barometrischer Höhenmesser und Kompass</li>
+
+        <li class="nostyle">
+          <ol class="low_char_latin">
+            <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden</li>
+
+            <li>integrierter barometrischer Höhenmesser und Kompass</li>
+
+            <li>lange Batterielaufzeiten – mindestens 10 Stunden</li>
+
+            <li>stabile Fahrradhalterung</li>
+          </ol>
+        </li>
+
+        <li>lange Batterielaufzeiten – mindestens 10 Stunden</li>
+      </ul>
+    </li>
+
+    <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden
+
+      <ol class="upp_char_roman">
+        <li>Farbdisplay, dass auch bei Sonnenlicht gut ablesbar ist</li>
+
+        <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden
+
+          <ul class="circle">
+            <li>Farbdisplay, dass auch bei Sonnenlicht gut ablesbar ist
+
+              <ol class="low_char_roman">
+                <li>integrierter barometrischer Höhenmesser und Kompass</li>
+
+                <li>lange Batterielaufzeiten – mindestens 10 Stunden</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+
+        <li>integrierter barometrischer Höhenmesser und Kompass</li>
+
+        <li>lange Batterielaufzeiten – mindestens 10 Stunden</li>
+
+        <li>stabile Fahrradhalterung</li>
+      </ol>
+    </li>
+
+    <li>integrierter barometrischer Höhenmesser und Kompass
+
+      <ul class="disc">
+        <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden</li>
+      </ul>
+    </li>
+
+    <li>lange Batterielaufzeiten – mindestens 10 Stunden
+
+      <ol class="upp_char_latin">
+        <li>Geräte sollten das universelle gpx-Format verarbeiten können</li>
+
+        <li>Farbdisplay, dass auch bei Sonnenlicht gut ablesbar ist</li>
+
+        <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden
+
+          <ul class="ext_img">
+            <li>Geräte sollten das universelle gpx-Format verarbeiten können</li>
+
+            <li>Farbdisplay, dass auch bei Sonnenlicht gut ablesbar ist</li>
+
+            <li>Kartenmaterial sollte auch mittels Speicherkarte ins Gerät gebracht werden</li>
+
+            <li>integrierter barometrischer Höhenmesser und Kompass</li>
+          </ul>
+        </li>
+
+        <li>integrierter barometrischer Höhenmesser und Kompass</li>
+
+        <li>lange Batterielaufzeiten – mindestens 10 Stunden</li>
+
+        <li>stabile Fahrradhalterung</li>
+      </ol>
+    </li>
+
+    <li>stabile Fahrradhalterung</li>
+  </ol>
+
+  <p class="source">Source: TransAlp Roadbook 8 by Andreas Albrecht, ISBN: 978-3-8391-6104-3</p>
+  <hr class="example"/>
+
+  <h3 id="chapter04a6">4.1.6 Tables</h3>
+
+  <p class="normal">Tables that exceed 35 characters per row and have more than 14 rows should be displayed as images. Larger tables only work on iOs and KF8 devices that have a zoom function for tables.</p>
+  <hr class="example"/>
+
+  <h4 id="heading_id_7">Example for a Table having 35 Characters per Row and 14 Rows</h4>
+
+  <table border="" class="small_table">
+
+    <tr>
+      <th class="th1">012345678901234567</th>
+
+      <th class="th1">89012345678901234</th>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+
+    <tr>
+      <td class="td_left">012345678901234567</td>
+
+      <td class="td_left">89012345678901234</td>
+    </tr>
+  </table>
+  <hr class="example"/>
+
+  <h4 id="heading_id_8">Example for a Table exceeding 35 Characters per Row</h4>
+
+  <div class="tablequery">
+    <table>
+      <tr>
+        <td class="td_left"><b>Ort</b></td>
+
+        <td class="td_right"><b>km</b></td>
+
+        <td class="td_right"><b>Höhe</b></td>
+
+        <td class="td_left"><b>Bemerkungen</b></td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Garmisch</td>
+
+        <td class="td_right">0,0</td>
+
+        <td class="td_right">708m</td>
+
+        <td class="td_left">hinter Hauptbahnhof großer freier Parkplatz an St.-Martin-Str., dem Straßenverlauf folgen in Richtung Zugspitze, bei Rechtskurve geradeaus weiter auf Radweg Richtung Grainau</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Garmisch</td>
+
+        <td class="td_right">1,8</td>
+
+        <td class="td_right">712m</td>
+
+        <td class="td_left">Hammersbacher Fußweg <span class="red"><b>(ab: v2-01a)</b></span><a href="../Text/chapter04.xhtml#fnote01a" id="note01a">*</a></td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Wiesenweg</td>
+
+        <td class="td_right">4,0</td>
+
+        <td class="td_right">746m</td>
+
+        <td class="td_left">rechts Ofenlainweg, links Wankstraße, dann Bahngleise queren, weiter Schmölzstraße und links in Straße An der Wies bis Querung Bundesstraße</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Grainau</td>
+
+        <td class="td_right">5,5</td>
+
+        <td class="td_right">744m</td>
+
+        <td class="td_left">ab hier Radweg parallel zur Straße, Richtung Ehrwald</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Griesen</td>
+
+        <td class="td_right">13,4</td>
+
+        <td class="td_right">826m</td>
+
+        <td class="td_left">Radweg</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Grenze D/A</td>
+
+        <td class="td_right">19,7</td>
+
+        <td class="td_right">911m</td>
+
+        <td class="td_left">immer Radweg folgen, bei Tankstelle Straße queren</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Ehrwald</td>
+
+        <td class="td_right">22,7</td>
+
+        <td class="td_right">966m</td>
+
+        <td class="td_left">an Tankstelle rechts, weiter durch Wiesengrund <span class="red"><b>(an: v2-01a)</b></span></td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Golfplatz</td>
+
+        <td class="td_right">23,5</td>
+
+        <td class="td_right">965m</td>
+
+        <td class="td_left">danach links <span class="red"><b>(ab: v2-01b)</b></span></td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Ehrwald M-Preis</td>
+
+        <td class="td_right">24,8</td>
+
+        <td class="td_right">998m</td>
+
+        <td class="td_left">am Kreisel links geteerte Rampe hoch, durch Gatter und weiter auf Forstwegen, rechts halten, Panoramaweg, Römer-, Stuckweg;</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Skihang</td>
+
+        <td class="td_right">28,9</td>
+
+        <td class="td_right">1047m</td>
+
+        <td class="td_left">nach Querung Skihang/Sommerrodelbahn links an Glas-Hotel vorbei weiter auf Waldweg <span class="red"><b>(an: v2-01b)</b></span></td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Wiese!!!</td>
+
+        <td class="td_right">30,0</td>
+
+        <td class="td_right">1096m</td>
+
+        <td class="td_left">in Linkskurve rechts über Wiese auf kaum erkennbarem Pfad</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Weißensee</td>
+
+        <td class="td_right">30,5</td>
+
+        <td class="td_right">1083m</td>
+
+        <td class="td_left">weiter alter Römerweg, bei Straßenberührung Serpentinen auf Schotter links hoch, gut fahrbar</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">alter Fernpass</td>
+
+        <td class="td_right">34,1</td>
+
+        <td class="td_right">1266m</td>
+
+        <td class="td_left">Stempelstelle am höchsten Punkt bei Schautafel, kurz Trail geradeaus, dann auf Forstweg bergab bis Fernpass-Straße</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">FernpassStraße</td>
+
+        <td class="td_right">36,2</td>
+
+        <td class="td_right">1165m</td>
+
+        <td class="td_left">Querung Fernpass-Straße; halbrechts hoch, nach ca. 100m links Via Claudia für Biker folgen, nicht dem ersten linken Wanderweg folgen; dann schöner Trail, teils ausgesetzt</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Schloss Fernstein</td>
+
+        <td class="td_right">38,9</td>
+
+        <td class="td_right">973m</td>
+
+        <td class="td_left">durchs Schloss fahren, weiter durch Campingplatz (Wasserstelle) bis Bundesstraße</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Ende Campingplatz</td>
+
+        <td class="td_right">39,7</td>
+
+        <td class="td_right">929m</td>
+
+        <td class="td_left">Bundesstraße durch Tunnel unterqueren und links der Straße auf Pfad bleiben, bei einer Weggabel links ca. 5 - 10 hm aufwärts und weiter auf Forstwegen Richtung Nassereith</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Nassereith</td>
+
+        <td class="td_right">44,0</td>
+
+        <td class="td_right">849m</td>
+
+        <td class="td_left">am Ortsende weiter auf Via Claudia bis Imst, schöner Forstweg</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Unterführung</td>
+
+        <td class="td_right">44,5</td>
+
+        <td class="td_right">840m</td>
+
+        <td class="td_left">Via Claudia, rechts, dann links</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Gurgltal</td>
+
+        <td class="td_right">45,9</td>
+
+        <td class="td_right">833m</td>
+
+        <td class="td_left">rechts durch Wald auf Via Claudia</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Strad</td>
+
+        <td class="td_right">50,8</td>
+
+        <td class="td_right">818m</td>
+
+        <td class="td_left">weiter Via Claudia, Achtung an Baum links, nicht weiter hinab in Wiesengrund, rasten/übernachten: Gasthof Seewald, Strad 12, Tel: 0043-5412-66024, direkt am Weg, <a href="http://www.gasthof-seewald.at">www.gasthof-seewald.at</a></td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Knappenwelt</td>
+
+        <td class="td_right">52,0</td>
+
+        <td class="td_right">790m</td>
+
+        <td class="td_left">links Via Claudia</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Brücke</td>
+
+        <td class="td_right">54,4</td>
+
+        <td class="td_right">767m</td>
+
+        <td class="td_left">links Via Claudia</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Imst, Brücke</td>
+
+        <td class="td_right">56,1</td>
+
+        <td class="td_right">749m</td>
+
+        <td class="td_left">gerade auf schmaler Trail am Wasser entlang, dann Straße queren, links am Haus Richtung Kirche</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Imst, Kirche</td>
+
+        <td class="td_right">57,4</td>
+
+        <td class="td_right">736m</td>
+
+        <td class="td_left">erreichen Ortslage bei neuer Kirche, weiter bergab Richtung Rafting-Platz am Inn</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Inn-Radweg</td>
+
+        <td class="td_right">58,2</td>
+
+        <td class="td_right">728m</td>
+
+        <td class="td_left">rechts ab, immer Inn-Radweg flussaufwärts folgen <span class="red"><b>(ab: v2-01c)</b></span></td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Mils-Au</td>
+
+        <td class="td_right">64,2</td>
+
+        <td class="td_right">741m</td>
+
+        <td class="td_left">links, immer Radweg folgen</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Schönwies</td>
+
+        <td class="td_right">66,2</td>
+
+        <td class="td_right">747m</td>
+
+        <td class="td_left">immer Radweg folgen</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Zams</td>
+
+        <td class="td_right">73,7</td>
+
+        <td class="td_right">774m</td>
+
+        <td class="td_left">Abzweig rechts nicht verpassen</td>
+      </tr>
+
+      <tr>
+        <td class="td_left">Landeck</td>
+
+        <td class="td_right">76,4</td>
+
+        <td class="td_right">789m</td>
+
+        <td class="td_left">Hotel Mozart, A-6500 Landeck, Adamhofgasse 7, Nähe Bahnhof, Tel.: 0043-5442-64222, <a href="http://www.mozarthotels.at">www.mozarthotels.at</a>; Schwimmbad, Sauna, Tourist Information Landeck: <a href="http://www.tirolwest.at">www.tirolwest.at</a>, Tel. 0043-5442-65600 <span class="red"><b>(an: v2-01c)</b></span></td>
+      </tr>
+
+      <tr>
+        <td class="td_left"/>
+
+        <td class="td_right"/>
+
+        <td class="td_right">920</td>
+
+        <td class="td_left">Gesamthöhenmeter</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="group"><img alt="" class="tablequery" id="note01b" src="../Images/img_p15.jpg"/> <img alt="" class="tablequery" src="../Images/img_p15a.jpg"/></div>
+  <hr/>
+
+  <p class="footnote tablequery_html"><a href="../Text/chapter04.xhtml#note01a" id="fnote01a">*</a> This is a dummy footnote. It belongs to the <span class="red">HTML-version</span> of the table. It shows how the media query is working for references in tables that are coded/displayed in html. It refers to the star symbol within the table.</p>
+
+  <p class="footnote tablequery_img"><a href="../Text/chapter04.xhtml#note01b" id="fnote01b">*</a> This is a dummy footnote. It belongs to the <span class="red">IMAGE-version</span> of the table. It shows how the media query is working for references in tables that are coded/displayed as image. It refers to the image of the table.</p>
+
+  <p class="source">Source: TransAlp Roadbook 1 by Andreas Albrecht, ISBN: 978-3-8423-1408-5</p>
+  <hr class="example"/>
+
+  <h3 id="chapter04a7">4.1.7 Boxes, Lines, Pullquotes</h3>
+
+  <p class="normal">Complex elements have to be coded for multiple platforms and devices. PDF matching is applied only where color schemes and layout display well on monochrome eInk devices.</p>
+  <hr class="line"/>
+
+  <p class="normal">Lines are coded using hr tags.</p>
+  <hr class="line"/>
+
+  <p class="box1">Boxes must have padding. PDF matching should be applied to line styles.</p>
+
+  <div class="pullquote">
+    <p class="pull">Pullquotes must be tested</p>
+  </div>
+
+  <p class="normal">Pullquotes may be used but only if the coding works on multiple plattforms and devices. Alignment of paragraph and pullquote has to be consistent over several font sizes and font types.</p>
+
+  <h3 id="chapter04a8">4.1.8 Footnotes</h3>
+
+  <p class="normal">Footnotes should be placed as endnotes at the end of each chapter. Numbering is per chapter.</p>
+  <hr class="example"/>
+
+  <h4 id="heading_id_9">Die Trinkstuben der Wollschläger in Strassburg</h4>
+
+  <p class="normal">Eine nicht unwesentliche Rolle in der Zunftgesellschaft der mittelalterlichen Stadt spielten die so genannten <i>Trinkstuben</i> der einzelnen Handwerkervereinigungen. Die Trinkstuben waren nicht nur ein Ort, welcher der Aufnahme von Getränken und gelegentlich auch Speisen diente, sondern erfüllten auch wichtige soziale Funktionen, dienten als Stätten der zünftigen Gemeinschaftsbildung und teilweise sogar der städtischen Organisation<a id="ifn39"/><a href="../Text/chapter04.xhtml#fn39"><sup>39</sup></a>. In den Zunft- und Trinkstuben fanden die offiziellen Zunftversammlungen statt, wurde zünftige Gerichtsbarkeit geübt, fanden Zunftfeierlichkeiten statt, wurden lokale und überregionale Neuigkeiten ausgetauscht, und sie konnten auch ein Ort sozialer Identitätsstiftung wie politischer Meinungsbildung sein<a id="ifn40"/><a href="../Text/chapter04.xhtml#fn40"><sup>40</sup></a>. Mitunter waren die Trinkstuben ursprünglich gar der Platz gewesen, wo bestimmte Gilden und Zünfte in Form von <i>Stubengesellschaften</i> begründet worden waren. Schmoller bezeichnet die Trinkstuben deshalb auch als die „Rathäuser der Zünfte“<a id="ifn41"/><a href="../Text/chapter04.xhtml#fn41"><sup>41</sup></a>.</p>
+
+  <p class="normal">In Strassburg sind im 14. Jahrhundert mindestens 50 bis 60 Trinkstuben für die verschiedenen Zünfte nachgewiesen. Offiziell entstanden sie nach 1332, mit der Entstehung der politischen Zünfte, Vorläufer existierten jedoch <a id="page_34"/>schon früher. Von diesen Stuben gehörten zwei Trinkstuben zu den Wollschläger beziehungsweise zu den Tuchern. Die erste (die ältere Stube) ist dabei erstmals für das Jahr 1374 nachgewiesen. Martin Alioth rechnet die ältere (auch: niedere Stube) den eigentlichen Wollschlägern zu, deren Meister und Knechte sich hier trafen. Um 1392 wurde diese, in der Großstadelgasse zwischen einer Kirche und dem Haus „Zum Bären“ gelegene Stube dann möglicherweise aufgegeben, wie diverse Ratsurteile zu belegen scheinen. Offensichtlich hatte man auf die alte Stube zu viel Zinsen aufgenommen, worüber sich der spätere Besitzer, der Tuchermeister Hans Meistersheim mit der Zunft stritt; das Urteil lautete dann darauf, dass Meistersheimer das Haus besitzen und Zinsen bezahlen sollte, die Tucherzunft dagegen die aufgelaufenen Kosten übernehmen sollten. Später, im Jahre 1395, wurde möglicherweise dasselbe Haus dann von den Fünfmannen der Tucherzunft zurückgekauft<a id="ifn42"/><a href="../Text/chapter04.xhtml#fn42"><sup>42</sup></a>. Ob die alte Stube eventuell dennoch von den Alt-Wollschlägern und Knechten auch über 1400 hinaus genutzt wurde, ist ungewiss. Es gibt zwar später noch nachgewiesene Zinszahlungen für die „Niederstube“, jedoch keine tatsächlichen Nutzungsnachweise<a id="ifn43"/><a href="../Text/chapter04.xhtml#fn43"><sup>43</sup></a>.</p>
+
+  <p class="normal">Die zweite (die neue Stube) hat noch eine Zeit parallel zur ersten Stube existiert, denn sie ist bereits ab 1390 nachgewiesen. Diese neuere Stube gehörte aber, wenn man Alioth folgt, schon von Beginn an zu den Tuchern, die – einschließlich der oben beschriebenen wohlhabenderen Wollschlägermeister – als aufstrebende Zunft eine neue gesellschaftlichgemeinschaftliche <a id="page_35"/>Umgebung schufen<a id="ifn44"/><a href="../Text/chapter04.xhtml#fn44"><sup>44</sup></a>. Im Übrigen war es andererseits auch nicht ungewöhnlich, dass eine Zunft mehr als eine Trinkstube hatte<a id="ifn45"/><a href="../Text/chapter04.xhtml#fn45"><sup>45</sup></a>.</p>
+
+  <p class="normal">Obwohl in neuer Zeit verschiedentlich dafür plädiert wird, die Zünfte in ihrer Rolle als gewerbliche, als politische, als militärische Zunft oder als Bruderschaft deutlicher voneinander zu trennen, scheint es mindestens für Strassburg (aber wohl auch für recht viele andere Städte) nachvollziehbarer, dass diese Bereiche eher sehr eng miteinander verflochten existierten und jeweils pro Zunft gemeinsam betrachtet werden sollten<a id="ifn46"/><a href="../Text/chapter04.xhtml#fn46"><sup>46</sup></a>. Jedenfalls dienten auch die Trinkstuben der Strassburger Wollschläger genau den oben erwähnten Zwecken. Mit dem Zunftrecht wurde in der Regel auch das Stubenrecht erworben. Die Zunftgenossen der Stube bestimmten gemeinsam den von der Zunft zu stellenden Ratsherrn, der Wachdienst wurde geregelt, ebenso die auf die Zünfte verteilte Beteiligung am Kriegsdienst. Und, ebenfalls bereits erwähnt, wurde in den Trinkstuben neben diesen politischen Aufgaben auch kommuniziert und das Sozialleben der zünftigen Wollschläger gepflegt und geregelt<a id="ifn47"/><a href="../Text/chapter04.xhtml#fn47"><sup>47</sup></a>.</p>
+
+  <p class="normal">Bezogen auf den Wach- und Brandschutzdienst und die Stadtverteidigung waren im Übrigen auch die Wollschläger (wie alle anderen Zünfte der Stadt) dazu verpflichtet, sich an diesen Aufgaben sowie an der Stellung militärischer Einheiten zu beteiligen. Zunächst war die Stadt Strassburg dazu in neun so genannte <i>Constofeln</i> eingeteilt, welche man quasi als Verteidigungsbezirke bezeichnen könnte. Später wurden die Zünfte den Constofeln militärisch gleichgestellt und der Ammeister wurde der oberste Befehlshaber der Zünfte. Je nach Einkommen mussten die Zunftmitglieder entweder Teile der militärischen Ausrüstung oder sogar die vollständige <a id="page_36"/>Ausrüstung selbst tragen. Dazu zählte vor allem ein Harnisch, Handwaffen und später auch Feuerwaffen<a id="ifn48"/><a href="../Text/chapter04.xhtml#fn48"><sup>48</sup></a>.</p>
+
+  <p class="normal">Auch, wenn spezifische Aussagen zu den Pflichten der Wollschläger in den Strassburger Quellen selten sind, ist doch überliefert, dass etwa die Wollschlägerknechte verpflichtet wurden, unter dem Banner und Befehl der Tucher zur Wehr auszurücken. Die Fünfmannen der Tucher konnten jederzeit den Harnisch des einzelnen Zunftmitglieds kontrollieren und bei nicht ordnungsgemäßem Zustand eine Strafe verhängen<a id="ifn49"/><a href="../Text/chapter04.xhtml#fn49"><sup>49</sup></a>. Für den Wachdienst in Kriegszeiten wurden den jeweiligen Zünften einzelne Mauerabschnitte, für den Feuerwachdienst bestimmte Zonen bzw. Patrouillenrouten in der Stadt zugeteilt. Den Tuchern – und damit naheliegenderweise den ihnen militärisch unterstellten Wollschlägern – war dabei für den Wachdienst ein Mauerabschnitt im Bereich der nordwestlichen Stadtmauer Strassburgs zugeteilt<a id="ifn50"/><a href="../Text/chapter04.xhtml#fn50"><sup>50</sup></a>.</p>
+  <hr/>
+
+  <p class="footnote" id="fn39"><a href="../Text/chapter04.xhtml#ifn39"><sup>39</sup></a> Zur Fokussierung der drei zuletzt genannten Funktionen siehe Gerhard Fouquet, Trinkstuben und Bruderschaften – soziale Orte in den Städten des Spätmittelalters, in: Fouquet (2003), S. 255-258.</p>
+
+  <p class="footnote" id="fn40"><a href="../Text/chapter04.xhtml#ifn40"><sup>40</sup></a> Zur Rolle der Stuben für Vermittlung und Austausch von Neuigkeiten vgl. Stephan Selzer, Trinkstuben als Ort der Kommunikation, in: Fouquet (2003), S. 77-79; zur Identitätsbildung und Rolle in der gesellschaftlichen Lebensordnung vgl. Jörg Rogge, Geschlechtergesellschaften, Trinkstuben und Ehre, in: Fouquet (2003), S. 125f.; zur politischen Rolle vgl. Katharina Simon-Muscheid, Zunft-Trinkstuben und Bruderschaften, in: Fouquet (2003), S. 151-153; übergreifend auch Heusinger (2009), S. 91 – 102..</p>
+
+  <p class="footnote" id="fn41"><a href="../Text/chapter04.xhtml#ifn41"><sup>41</sup></a> Vgl. Schmoller (1879), S. 404.</p>
+
+  <p class="footnote" id="fn42"><a href="../Text/chapter04.xhtml#ifn42"><sup>42</sup></a> Siehe dazu die Urkunden 16 und 18, abgedruckt bei Schmoller (1879), S. 14f. und 17; vgl. die Ausführungen bei Heusinger (2009), S. 492 und 559 (zu den Nummern 2169 und 3252 im Personenteil), Alioth (1988), S. 379. Die bei Alioth zumindest implizit genannte Übereinstimmung des letztgenannten Hauses mit der alten Trinkstube wird bei Schmoller nicht erkannt bzw. thematisiert.</p>
+
+  <p class="footnote" id="fn43"><a href="../Text/chapter04.xhtml#ifn43"><sup>43</sup></a> Vgl. Alioth (1988), S. 379. Dagegen spricht, dass diese Hinweise, die im älteren Buch der Tucher noch enthalten sind, schon aus der Zeit von vor 1400 stammen dürften; siehe dazu die editorischen Hinweise bei Schmoller (1879), S. 23.</p>
+
+  <p class="footnote" id="fn44"><a href="../Text/chapter04.xhtml#ifn44"><sup>44</sup></a> Siehe hierzu Alioth (1988), S. 332f. (einschließlich Lageplan der Zunftstuben in Strassburg) und 378f.</p>
+
+  <p class="footnote" id="fn45"><a href="../Text/chapter04.xhtml#ifn45"><sup>45</sup></a> Vgl. Heusinger (2009), S. 92.</p>
+
+  <p class="footnote" id="fn46"><a href="../Text/chapter04.xhtml#ifn46"><sup>46</sup></a> Ich folge hier der Argumentation von Heusinger (2009), S. 90f. und 164; für eine deutlichere Trennung plädiert dagegen etwa Franz Irsigler, Zur Problematik der Gilden- und Zunftterminologie, in: Schwineköper (1985), S. 68f.; vgl. auch Gerhard Fouquet, Trinkstuben und Bruderschaften, in: Fouquet (2003), S. 14 und 19.</p>
+
+  <p class="footnote" id="fn47"><a href="../Text/chapter04.xhtml#ifn47"><sup>47</sup></a> Siehe hierzu Heusinger (2009), S. 164f. und 339f.</p>
+
+  <p class="footnote" id="fn48"><a href="../Text/chapter04.xhtml#ifn48"><sup>48</sup></a> Zu diesen Aspekten vgl. Heusinger (2009), S. 102-111 und 160-163.</p>
+
+  <p class="footnote" id="fn49"><a href="../Text/chapter04.xhtml#ifn49"><sup>49</sup></a> Vgl. Schmoller (1879), S. 404f.; außerdem den Artikel 9 des ältesten Tucherbuches, Abdruck in ders., S. 25f.</p>
+
+  <p class="footnote" id="fn50"><a href="../Text/chapter04.xhtml#ifn50"><sup>50</sup></a> Die zugeteilten Mauerabschnitte standen wohl, entgegen ursprünglichen Annahmen, in keinem erkennbaren Zusammenhang mit den Wohnorten der Zunftmitglieder in der Stadt; vgl. dazu Johannes Cramer, Zur Frage der Gewerbegassen in der Stadt am Ausgang des Mittelalters, in: Die alte Stadt 11 (1984), S. 81ff. und hier besonders S. 88-89 inkl. Abb.2 zu Strassburg auf S.88.</p>
+  <hr class="example"/>
+
+  <p class="source">Source: Die Wollschläger im Mittelalter by Thomas Wollschläger, ISBN 978-3-848-236-87-9</p>
+
+  <h3 id="chapter04a9">4.1.9 Bibliographies, Indexes</h3>
+
+  <p class="normal">Bibliographies and Indexes should be aligned left, not justified.</p>
+  <hr class="example"/>
+
+  <p class="bibliography">Bendix, <a id="Reinhardpage_230"/>Reinhard. <em>Max Weber: An Intellectual Portrait</em>, 2. Aufl. Berkeley, Los Angeles und London: University of California Press, 1977. Deutsche Ausgabe: <em>Max Weber – das Werk. Darstellung, Analyse, Ergebnisse</em>. München: R. Piper &amp; Co. Verlag, 1964.</p>
+
+  <p class="bibliography">Brocke, Bernhard vom. „Von der Wissenschaftsverwaltung zur Wissenschaftspolitik. Friedrich <a id="Althoffpage_230"/>Althoff (19.2.1839-10.10.1908).“ <em>Berichte zur Wissenschaftsverwaltung</em>, Bd. 11, Heft 1 (März 1988), S. 1-26.</p>
+
+  <p class="bibliography">Bruch, Rüdiger vom. „Max Webers Kritik am ‚System Althoff‘ in universitätsgeschichtlicher Perspektive.“ <em>Berliner Journal für Soziologie</em>, Bd. 5, Heft 3 (September 1995), S. 313-326.</p>
+
+  <p class="bibliography">Bruun, Hans H. <em>Science, Values and Politics in Max Weber’s Methodology</em>, neue erweiterte Ausgabe. Aldershot und Burlington, VT: Ashgate Publishing, 2007.</p>
+
+  <p class="bibliography">Caplow, Theodore und Reece J. McGee. <em>The Academic Marketplace</em>. New Brunswick, NJ und London: Transaction Publishers, 2001 [1958].</p>
+
+  <p class="bibliography">Cartter, Allan M. <em>Ph.D.’s and the Academic Labor Market</em>. New York: McGraw-Hill, 1976.</p>
+
+  <p class="bibliography">Dreijmanis, John. „Weimar, Washington, and Beyond: The Plight of the Intelligentsia.“ <em>Educational Studies</em>, Bd. 9, Nr. 3 (Herbst 1978), S. 255-265.</p>
+  <hr class="example"/>
+
+  <p class="source">Source: Max Webers vollständige Schriften zu wissenschaftlichen und politischen Berufen, ISBN 978-3-86741-789-1</p>
+  <hr class="example"/>
+
+  <h3 id="heading_id_10">Index</h3>
+
+  <p class="index_letter">A</p>
+
+  <p class="index_entry">Amazon<a href="../Text/chapter04.xhtml#index01">→</a></p>
+
+  <p class="index_letter">B</p>
+
+  <p class="index_entry">Bulletpoint<a href="../Text/chapter04.xhtml#index02">→</a></p>
+
+  <p class="index_letter">C</p>
+
+  <p class="index_entry">CSS<a href="../Text/chapter03.xhtml#index03">→</a></p>
+  <hr class="example"/>
+
+  <h3 id="chapter04a10">4.1.10 Hyphenation and Soft Hyphens</h3>
+
+  <p class="normal">The following rules apply to hyphenation: It should be supressed in headers and TOC entries. Soft hyphens should be inserted in long hyperlinks. For other elements, hyphenation is controlled in CSS; soft hyphens may or may not be contained in the text.</p>
+  <hr class="example"/>
+
+  <ol>
+    <li>Paragraph 1: no hyphenation information provided. This is the standard way that web pages display content.</li>
+
+    <li>Paragraph 2: hyphenation suggestions included in the form of a soft-hyphen (&amp;shy;) written with the numerical code (&amp;#173;).</li>
+
+    <li>Paragraph 3: no hyphenation suggestions embedded in the content, but CSS3 hyphenation styles applied (<code>hyphens: auto;</code>)</li>
+
+    <li>Paragraph 4: hyphenation suggestions and CSS3 hyphenation styles applied</li>
+  </ol>
+
+  <div class="hyphen-zone">
+    <p class="normal"><b>Paragraph 1</b> That will indubitably lay the firm foundations for any leading company the balanced scorecard, like the executive dashboard, is an essential tool the new golden rule gives enormous power to those individuals and units. The three cs — customers, competition and change — have created a new world for business big is no longer impregnable the vitality of conceptual synergies is of supreme importance. In a collaborative, forward-thinking venture brought together through the merging of like minds. To ensure that non-operating cash outflows are assessed.</p>
+
+    <p class="normal"><b>Paragraph 2</b> An impor­tant ingre­dient of business process re­engineering measure the process, not the people. The stra­tegic vision — if indeed there be one — is required to iden­tify whether the organi­zation’s core competences are fully in line, given market realities an invest­ment program where cash flows exactly match share­holders’ preferred time patterns of consump­tion. In order to build a shared view of what can be improved, taking full cog­nizance of organi­zational learning param­eters and principles, motivating parti­cipants and capturing their expec­tations. As knowledge is frag­mented into speciali­ties the three cs — customers, com­petition and change — have created a new world for business empower­ment of all personnel, not just key operatives. Exploiting the productive life­cycle the balanced score­card, like the exec­utive dash­board, is an es­sential tool building flexi­bility through spreading know­ledge and self-organization.</p>
+
+    <p class="hyphens"><b>Paragraph 3</b> To focus on improvement, not cost, combined with optimal use of human resources, presentation of the process flow should culminate in idea generation. The strategic vision — if indeed there be one — is required to identify motivating participants and capturing their expectations, quantitative analysis of all the key ratios has a vital role to play in this. Exploiting the productive lifecycle highly motivated participants contributing to a valued-added outcome. An important ingredient of business process reengineering exploitation of core competencies as an essential enabler, whenever single-loop learning strategies go wrong.</p>
+
+    <p class="hyphens"><b>Paragraph 4</b> Big is no longer im­pregnable building a dynamic relatio­nship between the main players. Whether the organi­zation’s core compe­tences are fully in line, given market realities whenever single-loop learning stra­tegies go wrong, measure the process, not the people. From binary cause and effect to com­plex patterns, working through a top-down, bottom-up ap­proach, big is no longer im­pregnable. The balanced score­card, like the exec­utive dash­board, is an es­sential tool to ensure that non-operating cash out­flows are as­sessed. Quanti­tative anal­ysis of all the key ra­tios has a vital role to play in this exploit­ation of core comp­etencies as an es­sential enabler, com­bined with optimal use of human resources.</p>
+  </div>
+  <hr class="example"/>
+
+  <p class="source">Source: <a href="http://webdesign.about.com/od/examples/l/bl-hyphen-examples.htm">http://webdesign.about.com/od/examples/l/bl-hyphen-examples.htm</a></p>
+
+  <h4 id="heading_id_11">Example for soft hyphens in long hyperlinks</h4>
+
+  <p class="normal"><a href="http://books.google.de/books?id=PcWU2yxc8WkC&amp;pg=PA418&amp;dq=hyphenation+and+soft+hyphens&amp;hl=de&amp;sa=X&amp;ei=hyAiUcvaOomTswa57IHgCQ&amp;ved=0CEoQ6AEwBA#v=onepage&amp;q&amp;f=false">http://books.google.de/books?id=­PcWU2yxc8WkC&amp;pg=PA418&amp;dq=­hyphenation+and+soft+hyphens­&amp;hl=de&amp;sa=X&amp;ei=hyAiUcvaOomTswa57­IHgCQ&amp;ved=0CEoQ6AEwBA#v=onepage&amp;q&amp;f=false</a></p>
+  <hr class="example"/>
+
+  <h2 id="chapter04b">4.2 Images</h2>
+
+  <h3 id="chapter04b1">4.2.1 Images and Captions</h3>
+
+  <h4 id="heading_id_12">Large Images with Captions</h4>
+
+  <div class="group_img">
+    <div class="image"><img alt="Raupe und Regenwurm" src="../Images/f0017-01.jpg"/></div>
+
+    <p class="center caption_small">Aus: Leo der Baumkitzler, ISBN 978-3-8448-4190-9</p>
+  </div>
+
+  <div class="group_img">
+    <div class="image"><img alt="Raupe und Frosch" src="../Images/f0033-01.jpg"/></div>
+
+    <p class="center caption_small">Aus: Leo der Baumkitzler, ISBN 978-3-8448-4190-9</p>
+  </div>
+
+  <h4 id="heading_id_13">Small Images with Captions</h4>
+
+  <div class="group_img">
+    <h5>This is 95 percent height</h5>
+
+    <div class="image"><img alt="Schaukelpferd" src="../Images/small_img.jpg"/></div>
+
+    <p class="center caption_small">Aus: Mama und der Kaiserschnitt, ISBN 978-3-902647-62-7</p>
+  </div>
+
+  <div class="group_img" style="height:100%">
+    <h5>This is 100 percent height</h5>
+
+    <div class="image"><img alt="Schaukelpferd" src="../Images/small_img.jpg"/></div>
+
+    <p class="center caption_small">Aus: Mama und der Kaiserschnitt, ISBN 978-3-902647-62-7</p>
+	
+	 <h3 id="chapter04c">4.3 Amazon Paragraph Indentation Test</h3>
+	 
+  <p class="justifyp5">Personalkosten und Anlagenkosten verursachen bei der Einführung einer Kostenrechnung oft große Probleme. Grund ist die üblicherweise starke Bedeutung der Finanzwirtschaft, deren Vorrangigkeit zur Maßgeblichkeit für weitere rechnerische Operationen mutiert: Kosten sind das, was bezahlt wird. Dem ist entgegen zu setzen: Kosten sind das, was notwendig ist. Alles andere ist zur Ergebnissteuerung, sprich permanente Ergebnisverbesserung, ungeeignet. Bei den Personalkosten kommt hinzu, dass eine Kostenzurechnung über erfasste Arbeitszeiten viel zu aufwendig, unvollständig und zudem störend ist. Denn es müssten die Zeiten in jeder Kostenstelle erfasst werden, getrennt in variable und fixe Tätigkeiten. Diesen Aufwand können wir uns schenken, indem wir die Maschinen fragen, was sie benötigen und diesen Bedarf über die ohnehin zu ermittelnden Produktionsmengen bewerten. Die rechnerische Lösung dazu sehen Sie nachfolgend. Ein wesentliches Element darin ist die Drei-Teilung in produktbezogene, kostenstellen-variable und kostenstellen-fixe Kostenelemente. Laufende Stundenerhebungen sind nicht vorgesehen. Die gebuchten Kosten haben nur informatorischen Wert.</p>
+
+  <p class="justify1"><span class="underline">Schritt 1:</span> Datei Personalkosten.xlsm erstellen</p>
+
+  <p class="justifyp3">Öffnen Sie eine neue Arbeitsmappe und speichern Sie diese in Ihren Arbeitsordner, Dateityp <span class="italic">Excel-Arbeitsmappe mit Makros</span> unter: Personalkosten.xlsm</p>
+
+  <p class="justifyp3">Bestücken Sie die Datei <span class="italic">Personalkosten.xlsm</span> mit folgenden Registerblättern:</p>
+
+  <p class="justifyp3">Auswahl&#160;&#160; Prod&#160;&#160; K1&#160;&#160; K1Dep&#160; KStVar&#160;&#160; KStFix&#160;&#160; Kostensätze&#160;&#160; StdJeKSt&#160;&#160; Quelle&#160;&#160; Text&#160;&#160; Ueb&#160;&#160; Formel10&#160;&#160; Format&#160;&#160; Stamm</p>
+
+  <p class="justifyp3">Das Blatt <span class="italic">Formel10</span> ist aus der Datei <span class="italic">MakrosZurKundenerfolgsrechnung.xlsx</span> einzukopieren, es sei denn, Sie wollen die Formeln selbst erstellen.</p>
+	 
+  </div>
+</body>
+</html>
